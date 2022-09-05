@@ -14,13 +14,14 @@ section {
 }
 
 footer {
+    background-color: grey;
     width: 100%;
     height: 110px;
-    bottom: 0px;
     position: absolute;
+    bottom: 0px;
     border-top: 1px solid silver;
     padding-top: 15px;
-    color: black;
+    color: rgba(255, 255, 255, 0.56);
     font-size: 11px;
     text-align: center;
 }
@@ -29,7 +30,7 @@ footer a {
     display: inline-block;
     margin: 0 20px 10px 20px;
     font-size: 11px;
-    color: black;
+    color: rgba(255, 255, 255, 0.56);
     text-decoration: none;
 }
 
@@ -41,5 +42,11 @@ footer p {
 footer span {
     text-align: center;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 5px;
 }
+
+/* footer nav ::after {
+    margin: 0 20px 0 20px;
+    font-size: 15px;
+    content: "|";
+} */
