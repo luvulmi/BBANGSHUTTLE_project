@@ -11,6 +11,31 @@ footer {
     margin: 0 auto;
 }
 
+/* .sub_contents {
+    position: relative;
+} */
+
+.sub_title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    padding: 25px 0 65px;
+    /* position: relative; */
+    margin-top: 90px;
+    text-decoration: overline #bd8a61;
+}
+
+#uselaw {
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+
+/* ============================================================================== */
+/* footer */
+
 footer {
     margin-top: 100px;
     text-align: left;
