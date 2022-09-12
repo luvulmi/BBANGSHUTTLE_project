@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>notice</title>
+    <title>QNA</title>
     <link rel="stylesheet" href="../yrcss/yr.css">
 </head>
 
@@ -26,20 +26,15 @@
             <div id="boardwrite">
                 <div class="inner">
                     <div class="agree_area">
-                        <label for="chk">
+                        <label for="chk" class="design_chk">
                             <input type="checkbox" name id="chk" checked>
-                            <span></span>
                             개인정보 수집 및 이용에 대한 동의(필수)
                         </label>
                         <dl>
-                            <dt>개인정보 수집 정보 입니다.</dt>
+                            <dt>개인정보 수집 정보</dt>
                             <dd>
                                 <table class="tbl_row">
                                     <caption class="hidden">개인정보 수집•이용 동의</caption>
-                                    <colgroup>
-                                        <col style="width:30%">
-                                        <col>
-                                    </colgroup>
                                     <tbody>
                                         <tr>
                                             <th>수집하는 개인정보 항목</th>
@@ -48,7 +43,6 @@
                                         <tr>
                                             <th>수집 및 이용목적</th>
                                             <td class="tal">회원제 서비스 이용에 따른 본인확인 , 개인 식별 , 불량회원의 부정 이용 방지와 비인가 사용 방지 ,
-                                                <br>
                                                 가입 의사 확인 , 불만처리 등 민원처리 , 고지사항 전달
                                             </td>
                                         </tr>
@@ -68,11 +62,6 @@
                     <form action="#" id="wrtFrm" name="wrtFrm">
                         <table class="board_row">
                             <caption class="hidden">게시판 글쓰기</caption>
-                            <colgroup>
-                                <col style="width:15%">
-                                <col style="width:85%">
-                                <col>
-                            </colgroup>
                             <tbody>
                                 <tr class="user">
                                     <th scope="row"><label for="name">* 이름</label></th>
@@ -83,8 +72,7 @@
                                 <tr class="add_field">
                                     <th scope="row"><label for="pwd">* 비밀번호</label></th>
                                     <td>
-                                        <input type="password" name="pwd" value id="pwd" class="input"
-                                            placeholder="비밀번호">
+                                        <input type="password" name="pwd" value id="pwd" class="input">
                                     </td>
                                 </tr>
                                 <tr class="add_field">
@@ -140,6 +128,9 @@
                             </tbody>
                         </table>
                     </form>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="확인">
                 </div>
             </div>
         </div>

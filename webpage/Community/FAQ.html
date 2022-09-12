@@ -25,13 +25,20 @@
             <h3 class="sub_title">FAQ</h3>
             <div id="boardlist">
                 <div class="faq_board">
+                    <!-- <input type="radio" name="faq" id="faq1">
+                    <label for="faq1"><span class="icon"> Q </span><span>[기타]</span>
+                        사이트가 제대로 보이지 않아요.</label>
+                    <p class="faqcnt">빵셔틀 홈페이지는 internet explorer 9,10,11 / Firefox / Safari / Chrome 브라우저에 최적화 되어
+                        있습니다.
+                        그보다 하위버전에서는 제대로 보이지 않을 가능성이 있습니다.
+                        브라우저를 업데이트 해 주세요.</p> -->
                     <table class="board_col">
                         <caption class="hidden">글목록</caption>
                         <colgroup>
                             <col style="width:8%">
                             <col>
                         </colgroup>
-                        <thead>
+                        <thead class="hidden">
                             <tr>
                                 <th scope="col">질문/답변</th>
                                 <th scope="col">제목</th>
@@ -39,22 +46,25 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <th scope="row">
-                                    <span class="icon">Q</span>
-                                </th>
-                                <td class="tal">
-                                    <span>[기타]</span>
-                                    <a href="#"> 사이트가 제대로 보이지 않아요.</a>
-                                </td>
+                                <input type="radio" name="faq" id="faq1">
+                                <label for="faq1">
+                                    <th scope="row">
+                                        <span class="icon">Q</span>
+                                    </th>
+                                    <td class="tal">
+                                        <span>[기타]</span>
+                                        <span>사이트가 제대로 보이지 않아요.</span>
+                                    </td>
+                                </label>
                             </tr>
                             <tr id="faq9" class="faqcnt">
                                 <th scope="row">
-                                    <span class="icon answer">A</span>
+                                    <span class="icon">A</span>
                                 </th>
                                 <td class="tal">
                                     <div class="contents">
                                         <p>
-                                            김영모 과자점은 internet explorer 9,10,11 / Firefox / Safari / Chrome 브라우저에 최적화 되어
+                                            빵셔틀 홈페이지는 internet explorer 9,10,11 / Firefox / Safari / Chrome 브라우저에 최적화 되어
                                             있습니다.
                                             그보다 하위버전에서는 제대로 보이지 않을 가능성이 있습니다.
                                             브라우저를 업데이트 해 주세요.
