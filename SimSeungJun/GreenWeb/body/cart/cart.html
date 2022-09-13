@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <div class="cart_header">
+                <div class="cart_sub_div">
+                    <div class="cart_check">체크</div>
+                    <div class="cart_img">이미지</div>
+                    <div class="cart_pname">상품명</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_price">가격</div>
+                    <div class="cart_num">수량</div>
+                    <div class="cart_sum">합계</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_delete">삭제</div>
+                </div>
+            </div>
+
+            <div class="cart_data">
+                <div class="cart_sub_div">
+                    <div class="cart_check"><input type="checkbox" name="price_check"></div>
+                    <div class="cart_img"><img src="" alt="bread1" width="60"></div>
+                    <div class="cart_pname"><span>빵1</span></div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_price">??,???원</div>
+                    <div class="cart_num"><input type="number" maxlength="2" size="2" value="1" min="0" width="50px"></div>
+                    <div class="cart_sum">??,???원</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_delete"><button>X</button></div>
+                </div>
+            </div>
+
+            <div class="cart_footer">
+                <div><button>장바구니 비우기</button></div>
+                <div class="cart_all_sum">총 합계: ??,???원</div>
+            </div>
+
+            <div class="last_order">
+                <div><a href="#">선택한 상품 구매</a></div>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

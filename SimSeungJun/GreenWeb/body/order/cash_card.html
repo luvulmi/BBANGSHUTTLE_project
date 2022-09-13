@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cash_card.css">
+</head>
+
+<body>
+    <main>
+        <div class="cash_card">
+            <h2>주문 정보</h2>
+            <ul class="form-list">
+                <li class="form-list__row form-list__input-inline">
+                    <div class="user_name">
+                        <label>
+                            주문번호
+                        </label>
+                        <input type="text" name="order_num" value="22039044" readonly required>
+                    </div>
+                    <div class="user_name">
+                        <label>
+                            주문일자
+                        </label>
+                        <input type="text" name="order_day" required value="2022-09-12" readonly>
+                    </div>
+                </li>
+                <li class="form-list__row form-list__input-inline">
+                    <div class="user_name">
+                        <label>
+                            이름
+                        </label>
+                        <input type="text" name="user_name" placeholder="이름을 입력하시오." minlength="2" required>
+                    </div>
+                    <div>
+                        <label>휴대 전화</label>
+                        <div class="form-list__input-inline">
+                            <input type="text" name="first_phone" placeholder="010" minlength="3" maxlength="3"
+                                required="" />&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="middle_phone" minlength="4" maxlength="4" required>&nbsp;&nbsp;-&nbsp;&nbsp;
+                            <input type="text" name="last_phone" minlength="4" maxlength="4" required>
+                        </div>
+                    </div>
+                </li>
+                <li class="form-list__row">
+                    <label>이메일</label>
+                    <input type="email" name="" pa required>
+                </li>
+                <li class="form-list__row">
+                    <label>배송지 주소</label>
+                    <input type="text" name="" required>
+                </li>
+                <li class="form-list__row">
+                    <label>상세 주소</label>
+                    <input type="text" name="" required>
+                </li>
+                <li class="form-list__row">
+                    <label>배송시 요청 사항</label>
+                    <input type="text" name="" required>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+        <div class="cash_card">
+            <h2>카드 결제</h2>
+
+            <form>
+                <ul class="form-list">
+                    <li class="form-list__row">
+                        <label>이름</label>
+                        <input type="text" name="" required>
+                    </li>
+                    <li class="form-list__row">
+                        <label>카드 번호</label>
+                        <div id="input--cc" class="creditcard-icon">
+                            <input type="text" name="cc_number" required>
+                        </div>
+                    </li>
+                    <li class="form-list__row form-list__row--inline">
+                        <div>
+                            <label>유효기간</label>
+                            <div class="form-list__input-inline">
+                                <input type="text" name="cc_month" placeholder="MM" minlength="2" maxlength="2"
+                                    required>
+                                <input type="text" name="cc_year" placeholder="YY" minlength="2" maxlength="2" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label>
+                                CVC
+                            </label>
+                            <input type="text" name="cc_cvc" placeholder="123" minlength="3" maxlength="4"
+                                required="" />
+                        </div>
+                    </li>
+                    <li>
+                        <button type="submit" class="button">Pay Now</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
