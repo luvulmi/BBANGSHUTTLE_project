@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Bbang/Tab.css">
+
+    <title>탭 메뉴</title>
+</head>
+
+<body>
+    <div id="menu-box">
+        <!-- 탭 1 -->
+        <!-- 하나는 선택이 된 상태여야함. -->
+        <input type="radio" id="tab1" name="tab" checked hidden>
+        <label for="tab1">대충 회원 로그인</label>
+
+        <!-- 탭 2 -->
+        <input type="radio" id="tab2" name="tab" hidden>
+        <label for="tab2">대충 비회원 로그인</label>
+        <!-- input 부분은 hidden 속성으로 화면에서 숨겨줌 -->
+        <!-- 화면에서 숨기더라도 기능은 동작함. 보이지 않을 뿐임. -->
+        <!-- label 부분은 남겨야함. 클릭할 부분이 바로 라벨이기 때문 -->
+
+        <!-- 위의 input이 활성화 되어있을 때에 나올 탭 1의 내용 -->
+        <div id="content1" class="hidden content">
+            <form>
+                <div>
+                    <label for="id">아이디 : </label>
+                    <input type="text" name="id" id="id">
+                </div>
+
+                <div>
+                    <label for="password">비밀번호 : </label>
+                    <input type="password" name="password" id="password">
+                </div>
+                <button>로그인</button>
+            </form>
+        </div>
+
+        <!-- 탭 2의 내용 -->
+        <div id="content2" class="hidden content">
+            <form>
+                <div>
+                    <label for="order-name">이름 : </label>
+                    <input type="text" name="orderName" id="order-name">
+                </div>
+
+                <div>
+                    <label for="order-number">주문번호 : </label>
+                    <input type="text" name="orderNumber" id="order-number">
+                </div>
+
+                <div>
+                    <label for="order-password">주문 비밀번호 : </label>
+                    <input type="password" name="orderPassword" id="order-password">
+                </div>
+
+                <button>비회원 로그인</button>
+            </form>
+        </div>
+        <!-- 탭 1과 탭 2, 탭 1 내용과 탭 2 내용은 같은 레벨에 있어야함. -->
+        <!-- 같은 부모 아래의 형제태그여야한다는 소리. -->
+        <!-- 여기까지 구성을 하면 CSS로 넘어감. -->
+    </div>
+
+    <a href="/">메인으로</a>
+</body>
+
+</html>
