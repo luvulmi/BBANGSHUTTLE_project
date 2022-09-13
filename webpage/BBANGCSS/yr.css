@@ -137,15 +137,6 @@ footer {
     padding: 0 40px;
 }
 
-#boardlist .board_col {
-    width: 100%;
-}
-
-#boardlist .board_col>tbody>tr>th,
-#boardlist .board_col>tbody>tr>td {
-    padding: 15px;
-}
-
 #boardlist .icon {
     display: inline-block;
     width: 50px;
@@ -326,7 +317,7 @@ footer {
     float: left;
     margin: 30px 20px 30px 80px;
     padding: 10px 30px 10px 65px;
-    background: url(../image/man.png) left/100px 80px no-repeat;
+    background: url(../image/man3.png) left/80px no-repeat;
 }
 
 .my_info .user_info strong {
@@ -344,11 +335,6 @@ footer {
     line-height: 16px;
     font-weight: 300;
     margin-top: 5px;
-}
-
-.my_info .user_info strong,
-.my_info .user_info a {
-    margin-left: 15px;
 }
 
 .my_info ul li {
@@ -389,7 +375,7 @@ footer {
 }
 
 /* ================================================================================== */
-/* footer top - .links guide */
+/* guide */
 
 .t-msg,
 .gd-dsc li {
@@ -399,23 +385,6 @@ footer {
 
 .gd-dsc {
     margin-top: 70px;
-}
-
-.t-msg,
-.gd-dsc,
-.gd-dsc ol {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.t-msg,
-.gd-dsc,
-.gd-dsc dt,
-.gd-dsc dd,
-.gd-dsc ol {
-    display: block;
 }
 
 .gd-dsc dt {
@@ -436,16 +405,16 @@ footer {
     /* margin-bottom: 50px; */
 }
 
-/* =============================================================================== */
-/* .links info */
+/* ============================================================================ */
+/* privacy, userterms */
 
 #uselaw {
     border: 1px solid #ddd;
-    font-size: 14px;
     padding: 15px;
     height: 500px;
-    overflow-y: scroll;
+    overflow: auto;
 }
+
 
 /* ============================================================================== */
 /* footer */
@@ -455,42 +424,42 @@ footer {
     text-align: left;
 }
 
-.links,
-.site-info {
+.footer_top,
+.footer_middle {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.links,
-.site-info,
+.footer_top,
+.footer_middle,
 .footer_bottom {
     border-top: 1px solid silver;
     font-size: 14px;
 }
 
-.links {
+.footer_top {
     justify-content: left;
 }
 
-.links a {
+.footer_top a {
     width: 13%;
     text-align: center;
     margin: 20px 0;
 }
 
-.site-info {
+.footer_middle {
     padding: 20px 0;
 }
 
-.site-info div p,
-.site-info div a,
+.footer_middle div p,
+.footer_middle div a,
 .footer_bottom span {
     color: #7b7b7b;
 }
 
-.site-info div {
+.footer_middle div {
     flex: 1;
     text-align: center;
     height: 100px;

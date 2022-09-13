@@ -16,43 +16,41 @@ footer {
     text-align: left;
 }
 
-.links,
-.site-info {
+.footer_top,
+.footer_middle {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.links,
-.site-info,
+.footer_top,
+.footer_middle,
 .footer_bottom {
     border-top: 1px solid silver;
     font-size: 14px;
 }
 
-.links {
+.footer_top {
     justify-content: left;
 }
 
-.links a {
+.footer_top a {
     width: 13%;
     text-align: center;
     margin: 20px 0;
 }
-.site-info {
+.footer_middle {
     padding: 20px 0;
 }
 
-.site-info div p,
-.site-info div a,
+.footer_middle div p,
+.footer_middle div a,
 .footer_bottom span {
     color: #7b7b7b;
 }
 
-
-
-.site-info div {
+.footer_middle div {
     flex: 1;
     text-align: center;
     height: 100px;
