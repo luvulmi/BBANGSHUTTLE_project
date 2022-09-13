@@ -44,12 +44,11 @@ footer {
 .sub_top_tab ul {
     width: 100%;
     overflow: hidden;
-    /* position: relative;
-    z-index: 5; */
+    display: flex;
 }
 
 .sub_top_tab ul li {
-    float: left;
+    flex: 1;
     width: 20%;
 }
 
@@ -74,7 +73,6 @@ footer {
 /* ==========Notice========== */
 
 #boardlist .board_col {
-    clear: both;
     width: 100%;
 }
 
