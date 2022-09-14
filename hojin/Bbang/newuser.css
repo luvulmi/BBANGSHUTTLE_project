@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#jointop {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.jointop h3 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    line-height: 48px;
+    padding: 25px 0 65px;
+    position: relative;
+    margin-top: 90px;
+    text-decoration: overline #bd8a61;
+}
+
+.box_top1 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.box_top1 .topbox h4 span {
+    font-size: 36px;
+    color: #dadada;
+}
+
+.box_top1 .topbox h4 {
+    font-size: 27px;
+    line-height: 57px;
+    border-bottom: 3px solid #bd8a61;
+    transform: translateY(1px);
+}
+
+.topbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mainbox1 {
+    width: 900px;
+    height: 900px;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+}
+
+/* 오른쪽 상단 개인정보 글꼴 */
+
+.topbox p span {
+    color: #bd8a61;
+    font-weight: bold;
+}
+

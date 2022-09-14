@@ -7,10 +7,10 @@
 #join1 {
     width: 1200px;
     margin: 0 auto;
-    text-align: center;
 }
 
 #join1 h3 {
+    text-align: center;
     color: black;
     font-size: 40px;
     line-height: 48px;
@@ -64,7 +64,80 @@
 }
 
 .Setp_info {
+    padding: 45px;
     height: 914px;
     border: 1px solid black;
     border-color: #dadada;
+}
+
+.agree {
+    overflow: auto;
+    width: 93%;
+    height: 310px;
+    border: 1px solid #dadada;
+    padding: 30px;
+}
+
+.check {
+    padding: 10px;
+}
+
+.free {
+    padding: 0 0 5px 0;
+}
+
+.trTop {
+    border: 1px solid #dadada;
+    height: auto;
+    padding: 5px;
+}
+
+.trbox1 tr th {
+    width: 200px;
+    line-height: 80px;
+    border-right: 1px solid #dadada;
+}
+
+.trbox1 tr td {
+    padding: 0 0 0 30px;
+}
+
+.check2 {
+    padding: 10px;
+}
+
+/* 하단 버튼 */
+.new_btn {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.new_btn2 a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #bd8a61;
+    color: white;
+    text-decoration: none;
+    transition: background .5s;
+}
+
+.new_btn2 a:hover {
+    background-color: #945d31;
+}
+
+.new_btn3 a {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #514547;
+    color: white;
+    text-decoration: none;
+    transition: background .5s;
+}
+
+.new_btn3 a:hover {
+    background-color: black;
 }
