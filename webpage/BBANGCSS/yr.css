@@ -117,22 +117,28 @@ footer {
 /* =============================================================================== */
 /* ===========FAQ=========== */
 
-#faq1 {
-    display: none;
-}
-
-#faq1:checked~.faqcnt {
-    display: block;
-}
-
-.faqcnt {
-    display: none;
-}
-
 #boardlist .faq_board {
-    border: 1px solid #dadada;
+    /* border: 1px solid #dadada; */
     border-top: 2px solid #989898;
     padding: 0 40px;
+}
+
+#boardlist .faq_board p {
+    display: none;
+    white-space: pre-line;
+}
+
+#boardlist .faq_board input[type="radio"] {
+    display: none;
+}
+
+#boardlist .faq_board input[type="radio"]+label {
+    display: block;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    cursor: pointer;
+    position: relative;
 }
 
 #boardlist .icon {
@@ -144,8 +150,29 @@ footer {
     color: #fff;
     text-align: center;
     line-height: 50px;
+    margin-right: 10px;
 }
 
+#boardlist .faq_board input[type="radio"]+label::after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#boardlist .faq_board input[type="radio"]:checked+label::after {
+    content: '\f077';
+  }
+
+#boardlist .faq_board input[type="radio"]:checked+label+p {
+    display: block;
+    padding: 20px;
+    background-color: #bd896115;
+    border-bottom: 1px solid silver;
+}
 
 /* =============================================================================== */
 /* ===========QNA=========== */
