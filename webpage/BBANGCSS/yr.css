@@ -21,12 +21,10 @@ footer {
 
 .sub_title {
     min-height: 30px;
-    margin: 50px 0;
+    margin: 90px 0 50px;
     text-align: center;
     font-size: 35px;
-    line-height: 48px;
     padding: 25px 0 65px;
-    margin-top: 90px;
     text-decoration: overline #bd8a61;
 }
 
@@ -446,7 +444,6 @@ footer {
 
 footer {
     margin-top: 100px;
-    text-align: left;
 }
 
 .footer_top,
@@ -469,7 +466,7 @@ footer {
 }
 
 .footer_top a {
-    width: 13%;
+    width: 15%;
     text-align: center;
     margin: 20px 0;
 }
