@@ -11,37 +11,42 @@
 </head>
 
 <body>
-    <form action="./LOGINLetsgo.html" method="post">
-        <div class="Login">
-            <div><a href="#">회원 로그인</a></div>
-            <div><a href="#">비회원 주문</a></div>
-            <ul class="LoginTop">
-                <li><label for="UserID"></label>
+    <div class="Login_main">
+        <h3>LOGIN</h3>
+        <div class="Login_middle">
+            <div><a href="#">회원 로그인</a>
+                <a href="#">비회원 주문</a>
+            </div>
+            <div class="Login">
+                <div class="LoginTop_id">
+                    <label for="UserID">아이디</label>
                     <input type="text" id="UserID" placeholder="아이디">
-                </li>
-                <li><label for="UserPW"></label>
+                </div>
+                <div class="LoginTop_pw">
+                    <label for="UserPW">비밀번호</label>
                     <input type="password" id="UserPW" placeholder="비밀번호" maxlength="20">
-                </li>
-                <li class="LoginBtn"><a href="#">로그인</a></li>
+                    <a href="#" class="LoginBtn">로그인</a>
+                </div>
 
-                <li class="save1"><input type="checkbox" id="check1" checked>
-                    <label for="check1">보안접속</label>
-                </li>
-                <li class="save2"><input type="checkbox" id="check2">
-                    <label for="check2">아이디저장</label>
-                </li>
-                <li class="LoginBtm"><a href="#">아이디/비밀번호 찾기</a></li>
-            </ul>
+                <div class="save1">
+                    <input type="checkbox" id="check1" checked>
+                    보안접속
+                    <input type="checkbox" id="check2">
+                    아이디저장
+                    <a href="#">아이디/비밀번호 찾기</a>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
 
-        <div class="joinBtn"><strong>아직 회원이 아니세요?</strong>
-            <p>
-                회원이 되시면 할인쿠폰, 이벤트 참여 등 다양한 혜택을 누리실 수 있습니다.<br>
-                가입해라 이것드라.
-            </p>
-            <a href="#">신규회원가입</a>
-        </div>
-    </form>
+    <div class="joinBtn"><strong>아직 회원이 아니세요?</strong>
+        <p>
+            회원이 되시면 할인쿠폰, 이벤트 참여 등 다양한 혜택을 누리실 수 있습니다.<br>
+            가입해라 이것드라.
+        </p>
+        <a href="#">신규회원가입</a>
+    </div>
 </body>
 
 </html>
