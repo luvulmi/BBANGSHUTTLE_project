@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디/비밀번호 찾기</title>
+
+    <link rel="stylesheet" href="./find.css">
+</head>
+
+<body>
+    <div class="find_main">
+        <h3>ID/PASSWORD SEARCH</h3>
+
+        <div class="find_top">
+            <div class="find_middle">
+                <fieldset class="find_field">
+                    <legend>아이디 찾기</legend>
+                    <div clss="id_find">
+                        <label for="id_find_name">이름</label>
+                        <input type="text" name="name" id="id_find_name" class="input_find_name" placeholder="이름">
+                    </div>
+                    <div class="email_find">
+                        <label for="email_find">이메일</label>
+                        <input type="email" name="email" id="email_find" class="input_email" placeholder="이메일">
+                    </div>
+                    <div class="security_find">
+                        <input type="checkbox" name="security" id="secu_find" checked disabled>
+                        보안접속
+                    </div>
+                    <input type="submit" value="확인" class="btn_find_name">
+                </fieldset>
+                <fieldset class="find_field2">
+                    <legend>비밀번호 찾기</legend>
+                    <div clss="pw_find">
+                        <label for="pw_find_name">아이디</label>
+                        <input type="text" name="name" id="pw_find_name" class="input_find_pw" placeholder="아이디">
+                    </div>
+                    <div clss="pw_find2">
+                        <label for="pw_find_name2">이름</label>
+                        <input type="text" name="name" id="pw_find_name2" class="input_find_pw2" placeholder="이름">
+                    </div>
+                    <div class="email_find_pw">
+                        <label for="email_find_pw">이메일</label>
+                        <input type="text" name="email" id="email_find_pw" class="input_email_pw" placeholder="이메일">
+                    </div>
+                    <div class="security_find_pw">
+                        <input type="checkbox" name="security" id="secu_find" checked disabled>
+                        보안접속
+                    </div>
+                    <input type="submit" value="확인" class="btn_find_name2">
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
