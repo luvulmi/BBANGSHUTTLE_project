@@ -1,0 +1,421 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 80%;
+}
+
+header {
+    width: 100vw;
+    height: 86px;
+}
+
+a {
+    color: black;
+}
+
+.header_top {
+    margin: auto;
+    border-bottom: 1px solid #939393;
+    width: 100%;
+    min-width: 900px;
+    display: flex;
+    flex-basis: 900px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.header_top img {
+    width: 108px;
+    height: 86x;
+}
+
+nav>div:nth-child(1) {
+    width: 15%;
+}
+
+nav>div:nth-child(2) {
+    width: 65%;
+}
+
+nav>div:nth-child(3) {
+    width: 20%;
+}
+
+.main_cate,
+.user_cate {
+    display: flex;
+}
+
+.main_cate li,
+.user_cate li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.main_cate>li {
+    color: black;
+    padding: 30px 20px;
+    width: 25%;
+}
+
+
+.user_cate>li {
+    padding: 30px 20px;
+}
+
+.sub_cate {
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background-color: white;
+    border-top: 1px solid #939393;
+    box-sizing: border-box;
+}
+
+.sub_cate li {
+    background-color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.header_top:hover {
+    background-color: white;
+}
+
+.user_cate .sub_cate li {
+    width: 150px;
+}
+
+.main_cate>li:hover .sub_cate,
+.user_cate>li:hover .sub_cate {
+    display: block;
+}
+
+.main_cate>li .sub_cate:hover,
+.user_cate>li .sub_cate:hover {
+    display: block;
+}
+
+.sub_cate>li:hover {
+    background-color: antiquewhite;
+    border-left: 2.5px solid #bd8a61;
+    transition: border 0.1s;
+    font-weight: bold;
+}
+
+/* ##########################회원가입 폼######################### */
+
+#jointop {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.jointop h3 {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    line-height: 48px;
+    padding: 25px 0 65px;
+    position: relative;
+    margin-top: 90px;
+    /* border-top: 1px solid #bd8a61; */
+    text-decoration: overline #bd8a61;
+}
+
+.box_top1 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.box_top1 .topbox h4 span {
+    font-size: 36px;
+    color: #dadada;
+}
+
+.box_top1 .topbox h4 {
+    font-size: 27px;
+    line-height: 57px;
+    border-bottom: 3px solid #bd8a61;
+    transform: translateY(1px);
+}
+
+.topbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mainbox1 {
+    width: 900px;
+    height: 900px;
+    border: 1px solid #dadada;
+    margin: 0 auto;
+}
+
+/* 오른쪽 상단 개인정보 글꼴 */
+
+.topbox p span {
+    color: #bd8a61;
+    font-weight: bold;
+}
+
+/* 테이블 박스 */
+
+.mainbox1 {
+    padding-top: 50px;
+}
+
+.mainbox1 th {
+    height: 68px;
+    line-height: 68px;
+    width: 150px;
+    display: inline-block;
+}
+
+.jid,
+.jname,
+.jpw,
+.jpw2,
+.jcall,
+.jadress,
+.jemail1,
+.jemail2,
+.addr1,
+.addr2 {
+    height: 50px;
+    width: 290px;
+    border: 1px solid #dadada;
+}
+
+.mainbox1 tr {
+    height: 68px;
+}
+
+.mainbox1 tr td {
+    line-height: 50px;
+}
+
+.mainbox1 input {
+    font-size: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+#join_email1,
+#join_email2 {
+    width: 290px;
+}
+
+.option1 {
+    height: 50px;
+}
+
+.id_check {
+    display: inline-block;
+    background-color: #bd8a61;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 120px;
+    line-height: 54px;
+    transition: all .4s;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.id_check:hover {
+    background-color: #945d31
+}
+
+.adress_sh {
+    display: inline-block;
+    background-color: #bd8a61;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 150px;
+    line-height: 54px;
+    transition: all .4s;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.adress_sh:hover {
+    background-color: #945d31;
+}
+
+.mainbox1 tr select {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+#birth1,
+#birth2,
+#birth3 {
+    height: 50px;
+    width: 100px;
+}
+
+#birth_type1 {
+    margin-left: 20px;
+}
+
+#birth_type2 {
+    margin-left: 10px;
+}
+
+#birth_type1,
+#birth_type2 {
+    height: 50px;
+    width: 50px;
+}
+
+.birth_ty1,
+.birth_ty2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#sex_male,
+#sex_female {
+    height: 50px;
+    width: 50px;
+}
+
+#sex_female {
+    margin-left: 10px;
+}
+
+.male_type,
+.female_type {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Confirm_btn {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Confirm_btn1 a {
+    display: inline-block;
+    background-color:#bd8a61;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    transition: all .4s;
+}
+
+.Confirm_btn1:hover a {
+    background-color:#945d31;
+}
+
+.Confirm_btn2 a {
+    display: inline-block;
+    background-color:#989898;
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+    text-align: center;
+    font-weight: bold;
+    
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    transition: all .4s;
+}
+
+.Confirm_btn2:hover a {
+    background-color: #5d5d5d;
+}
+
+/* @@@@@@@@@@@@@@footer page@@@@@@@@@@@@@@@@@@ */
+
+footer {
+    margin: auto;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.footer_top,
+.footer_middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_top,
+.footer_middle,
+.footer_bottom {
+    border-top: 1px solid silver;
+    font-size: 14px;
+}
+
+.footer_top {
+    justify-content: left;
+}
+
+.footer_top a {
+    width: 13%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer_middle {
+    padding: 20px 0;
+}
+
+.footer_middle div p,
+.footer_middle div a,
+.footer_bottom span {
+    color: #7b7b7b;
+}
+
+.footer_middle div {
+    flex: 1;
+    text-align: center;
+    height: 100px;
+}
+
+.footer_bottom {
+    padding: 30px 0;
+    height: 50px;
+    font-size: 12px;
+}
+
+.copyright {
+    font-size: 9px;
+    color: silver;
+}
+
+.sub_title {
+    min-height: 30px;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: 48px;
+    padding: 25px 0 65px;
+    margin-top: 90px;
+    text-decoration: overline #bd8a61;
+}

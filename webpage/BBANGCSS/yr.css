@@ -435,6 +435,8 @@ footer {
     border: 1px solid #ddd;
     padding: 15px;
     height: 500px;
+    text-align: justify;
+    word-break: break-all;
     overflow: auto;
 }
 
