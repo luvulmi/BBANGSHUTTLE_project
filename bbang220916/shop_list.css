@@ -1,0 +1,72 @@
+main {
+    width: 80%;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+.SL_title>h3 {
+    min-height: 30px;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: 48px;
+    padding: 25px 0 65px;
+    margin-top: 90px;
+    text-decoration: overline #bd8a61;
+}
+
+.SL_sublist {
+    display: flex;
+    line-height: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bolder;
+    background-color: rgb(218, 210, 210);
+}
+
+.SL_sublist a {
+    color: rgb(55, 55, 55);
+}
+
+
+.SL_recommend_list {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 200px;
+    gap: 1%;
+}
+
+.SL_recommend_item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+    /* border: 0.5px dashed; */
+    box-sizing: border-box;
+}
+
+.SL_recommend_item a {
+    text-align: center;
+    margin: 10px;
+}
+
+.SL_recommend_item img {
+    width: 80%;
+}
+
+.SL_bigimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+}
+
+.SL_bigimg img {
+    width: 100%;
+    /* margin-bottom: 10%; */
+}

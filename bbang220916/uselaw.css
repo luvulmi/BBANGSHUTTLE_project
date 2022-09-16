@@ -1,0 +1,15 @@
+#uselaw {
+    border: 1px solid #ddd;
+    padding: 15px;
+    height: 500px;
+    text-align: justify;
+    word-break: break-all;
+    overflow: auto;
+    width: 75%;
+    margin: auto;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}

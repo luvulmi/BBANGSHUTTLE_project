@@ -1,0 +1,452 @@
+/* =============================================================================== */
+/* common */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sub_contents {
+    width: 100%;
+}
+
+.sub_title {
+    min-height: 30px;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: 48px;
+    padding: 25px 0 65px;
+    margin-top: 90px;
+    text-decoration: overline #bd8a61;
+}
+
+.hidden {
+    display: none;
+}
+
+.community_image {
+    height: 500px;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    background: url(./image/community.jpg) left/cover no-repeat;
+}
+
+.community_inner {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.community_inner h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+    position: relative;
+    top: 0px;
+}
+
+.community_inner span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* =============================================================================== */
+/* community top */
+
+.sub_top_tab {
+    background: #eee;
+}
+
+.sub_top_tab ul {
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+}
+
+.sub_top_tab ul li {
+    flex: 1;
+    width: 20%;
+}
+
+.sub_top_tab ul li a {
+    color: #7e7e7e;
+    border-right: 1px solid #d3d3d3;
+    display: block;
+    line-height: 65px;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.sub_top_tab ul li a:hover {
+    color: #fff;
+    background-color: #bd8961;
+}
+
+.sub_top_tab ul li:last-child a {
+    border-right: none;
+}
+
+/* =============================================================================== */
+/* ==========Notice========== */
+
+#boardlist .board_col {
+    width: 100%;
+}
+
+#boardlist .board_col>thead>tr>th {
+    padding: 15px 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* =============================================================================== */
+/* ===========SNS=========== */
+
+.sns_tab {
+    overflow: hidden;
+}
+
+.sns_tab li {
+    width: 76px;
+    height: 76px;
+    float: left;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sns_tab li:hover img,
+.sns_tab li.on img {
+    margin-top: -76px;
+}
+
+/* =============================================================================== */
+/* ===========Event=========== */
+
+.ready {
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* =============================================================================== */
+/* ===========FAQ=========== */
+
+#boardlist .faq_board {
+    /* border: 1px solid #dadada; */
+    border-top: 2px solid #989898;
+    padding: 0 40px;
+}
+
+#boardlist .faq_board p {
+    display: none;
+    white-space: pre-line;
+}
+
+#boardlist .faq_board input[type="radio"] {
+    display: none;
+}
+
+#boardlist .faq_board input[type="radio"]+label {
+    display: block;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    cursor: pointer;
+    position: relative;
+}
+
+#boardlist .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #2f2b29;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+#boardlist .faq_board input[type="radio"]+label::after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free', sans-serif;
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#boardlist .faq_board input[type="radio"]:checked+label::after {
+    content: '\f077';
+}
+
+#boardlist .faq_board input[type="radio"]:checked+label+p {
+    display: block;
+    padding: 20px;
+    background-color: #bd896115;
+    border-bottom: 1px solid silver;
+}
+
+/* =============================================================================== */
+/* ===========QNA=========== */
+
+#boardwrite .agree_area {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#boardwrite .agree_area label.design_chk {
+    position: absolute;
+    z-index: 5;
+    top: 35px;
+    color: #fff;
+    padding-left: 25px;
+    cursor: pointer;
+}
+
+#boardwrite .agree_area dl dt {
+    background: #bd8961;
+    padding: 35px 35px;
+    position: relative;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+#boardwrite .agree_area dl dd {
+    background: #f8f8f8;
+    width: 100%;
+}
+
+#boardwrite .tbl_row th,
+#boardwrite .tbl_row td {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#boardwrite .tbl_row tbody {
+    width: 100%;
+    overflow: hidden;
+}
+
+#boardwrite .tbl_row th {
+    width: 20%;
+    color: #2f2b29;
+    height: 45px;
+    line-height: 45px;
+    vertical-align: middle;
+}
+
+#boardwrite .tbl_row td {
+    width: 50%;
+    height: auto;
+    line-height: 45px;
+    padding: 15px;
+}
+
+#boardwrite .board_row {
+    padding: 30px;
+}
+
+#boardwrite .board_row th {
+    width: 30%;
+}
+
+#boardwrite .board_row td {
+    padding: 30px 0;
+    width: 100%;
+}
+
+#boardwrite .board_row td select,
+#boardwrite .board_row td input[type='text'],
+#boardwrite .board_row td input[type='password'] {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    background: #f8f8f8;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+#boardwrite .board_row td textarea {
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    background: #f8f8f8;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    height: 300px;
+}
+
+#boardwrite form {
+    border: 1px solid #dadada;
+    border-top: 2px solid #989898;
+    border-bottom: 2px solid #989898;
+}
+
+.btn {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.btn>input {
+    width: 150px;
+    padding: 12px 16px;
+    border: none;
+    background: #bd8a61;
+    color: #fff !important;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+/* ================================================================================== */
+/* Mypage */
+
+.tbl_mypage {
+    width: 100%;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dadada;
+}
+
+.tbl_mypage thead th {
+    width: 20%;
+    color: #222;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #dadada;
+    border-left: 0;
+    border-right: 0;
+    padding: 25px 0;
+}
+
+.tbl_mypage tbody td {
+    padding-left: 70px;
+}
+
+.tbl_mypage tbody td ul {
+    padding: 15px 0 30px;
+}
+
+.tbl_mypage tbody td ul li {
+    margin-top: 5px;
+}
+
+.tbl_mypage tbody td>ul>li>a {
+    font-size: 14px;
+    line-height: 16px;
+    background: url(../image/check2.png) left/10px no-repeat;
+    padding-left: 15px;
+}
+
+.underline:hover {
+    text-decoration: underline #bd8961;
+    color: #bd8961;
+}
+
+.my_info {
+    border: 5px solid #dadada;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.my_info .user_info {
+    float: left;
+    margin: 30px 20px 30px 80px;
+    padding: 10px 30px 10px 65px;
+    background: url(../image/man3.png) left/80px no-repeat;
+}
+
+.my_info .user_info strong {
+    display: block;
+    font-size: 14px;
+}
+
+.my_info .user_info a {
+    color: #fff;
+    background: #2f2b29;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.my_info ul li {
+    float: left;
+    margin-right: 70px;
+    padding-top: 10px;
+}
+
+.my_info ul li a {
+    display: block;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.my_info ul li.milige a {
+    background: url(../image/accumulate.png) center/70px no-repeat;
+}
+
+.my_info ul li.coupon a {
+    background: url(../image/coupon.png) center/70px no-repeat;
+}
+
+.my_info ul li.cart a {
+    background: url(../image/cart2.png) center/60px no-repeat;
+}
+
+.my_info ul li.wish a {
+    background: url(../image/heart.png) center/50px no-repeat;
+}
+
+#mypage h3 {
+    padding-top: 70px;
+}
+
+.empty {
+    padding: 100px 0 !important;
+    text-align: center;
+}
+
+/* ================================================================================== */
+/* guide */
+
+.t-msg,
+.gd-dsc li {
+    font-size: 14px;
+    color: #7b7b7b;
+}
+
+.gd-dsc {
+    margin-top: 70px;
+}
+
+.gd-dsc dt {
+    padding: 0 0 10px 10px;
+    position: relative;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px dashed #e9e9e9;
+    margin-top: 30px;
+}
+
+.gd-dsc dd {
+    padding: 15px 0 0 10px;
+    font-size: 14px;
+    color: #7b7b7b;
+    line-height: 27px;
+    margin-inline-start: 40px;
+    /* margin-bottom: 50px; */
+}
