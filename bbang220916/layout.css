@@ -68,6 +68,7 @@ nav>div:nth-child(3) {
 .user_cate li {
     position: relative;
     padding: 10px 20px;
+    cursor: pointer;
 }
 
 .main_cate>li {

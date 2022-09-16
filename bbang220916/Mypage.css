@@ -49,10 +49,18 @@
 }
 
 .my_info .user_info {
-    float: left;
-    margin: 30px 20px 30px 80px;
-    padding: 10px 30px 10px 65px;
-    background: url(./image/man3.png) left/80px no-repeat;
+    padding: 70px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(./image/man3.png) left/80px 80px no-repeat;
+}
+
+.my_info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .my_info .user_info strong {
@@ -72,10 +80,19 @@
     margin-top: 5px;
 }
 
+.my_info ul {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+}
+
 .my_info ul li {
-    float: left;
-    margin-right: 70px;
-    padding-top: 10px;
+    display: flex;
+    flex: 1;
+
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
 }
 
 .my_info ul li a {
