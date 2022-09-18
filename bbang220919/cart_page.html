@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBANGSHUTTLE</title>
+    <script src="https://kit.fontawesome.com/248a89409c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./cart_page.css">
+    <link rel="stylesheet" href="./layout.css">
+</head>
+
+<body>
+    <header>
+        <nav class="header_top">
+            <div>
+                <a href="./main_page.html"><img src="./image/12121212-removebg-preview.png" alt=""></a>
+            </div>
+            <div>
+                <ul class="main_cate">
+                    <li><strong><em>Bread</em></strong>
+                        <ul class="sub_cate">
+                            <li><a href="./shop_list_bread.html">식빵</a></li>
+                            <li><a href="./shop_list_bread.html">간식빵</a></li>
+                            <li><a href="./shop_list_bread.html">건강빵</a></li>
+                            <li><a href="./shop_list_bread.html">도넛</a></li>
+                            <li><a href="./shop_list_bread.html">페스츄리/파이</a></li>
+                        </ul>
+                    </li>
+                    <li><strong><em>Cake</em></strong>
+                        <ul class="sub_cate">
+                            <li><a href="./shop_list_cake.html">생크림 케이크</a></li>
+                            <li><a href="./shop_list_cake.html">티라미수</a></li>
+                            <li><a href="./shop_list_cake.html">클래식 케이크</a></li>
+                        </ul>
+                    </li>
+                    <li><strong><em>Present</em></strong>
+                        <ul class="sub_cate">
+                            <li><a href="./shop_list_present.html">롤케이크</a></li>
+                            <li><a href="./shop_list_present.html">파운드/카스테라</a></li>
+                            <li><a href="./shop_list_present.html">구움과자/전통선물</a></li>
+                        </ul>
+                    </li>
+                    <li><strong><em>Dessert</em></strong>
+                        <ul class="sub_cate">
+                            <li><a href="./shop_list_dessert.html">쿠키/타르트</a></li>
+                            <li><a href="./shop_list_dessert.html">초코/캔디</a></li>
+                            <li><a href="./shop_list_dessert.html">마카롱</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="user_cate">
+                    <li><i class="fa-solid fa-user fa-xl "></i>
+                        <ul class="sub_cate">
+                            <li><a href="./log_in_page.html">로그인</a></li>
+                            <li><a href="./order_history_page.html">주문내역</a></li>
+                            <li><a href="./Mypage.html">마이페이지</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./cart_page.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+                    <li><a href="./community_Notice.html"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h3 class="sub_title">CART</h3>
+        </div>
+        <form>
+            <div class="cart_header">
+                <div class="cart_sub_div">
+                    <div class="cart_check">체크</div>
+                    <div class="cart_img">이미지</div>
+                    <div class="cart_pname">상품명</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_price">가격</div>
+                    <div class="cart_num">수량</div>
+                    <div class="cart_sum">합계</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_delete">삭제</div>
+                </div>
+            </div>
+
+            <div class="cart_data">
+                <div class="cart_sub_div">
+                    <div class="cart_check"><input type="checkbox" name="price_check1"></div>
+                    <div class="cart_img"><img src="../project/image/BBang.jpg" alt="bread1" width="60"></div>
+                    <div class="cart_pname"><span>빵1</span></div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_price">??,???원</div>
+                    <div class="cart_num"><input type="number" maxlength="2" size="2" value="1" min="0"
+                            id="cart_num_id">
+                    </div>
+                    <div class="cart_sum">??,???원</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_delete"><button>X</button></div>
+                </div>
+            </div>
+            <div class="cart_data">
+                <div class="cart_sub_div">
+                    <div class="cart_check"><input type="checkbox" name="price_check2"></div>
+                    <div class="cart_img"><img src="" alt="bread2" width="60"></div>
+                    <div class="cart_pname"><span>빵2</span></div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_price">??,???원</div>
+                    <div class="cart_num"><input type="number" maxlength="2" size="2" value="1" min="0"
+                            id="cart_num_id">
+                    </div>
+                    <div class="cart_sum">??,???원</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_delete"><button>X</button></div>
+                </div>
+            </div>
+            <div class="cart_data">
+                <div class="cart_sub_div">
+                    <div class="cart_check"><input type="checkbox" name="price_check3"></div>
+                    <div class="cart_img"><img src="" alt="bread3" width="60"></div>
+                    <div class="cart_pname"><span>빵3</span></div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_price">??,???원</div>
+                    <div class="cart_num"><input type="number" maxlength="2" size="2" value="1" min="0"
+                            id="cart_num_id">
+                    </div>
+                    <div class="cart_sum">??,???원</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_delete"><button>X</button></div>
+                </div>
+            </div>
+            <div class="cart_data">
+                <div class="cart_sub_div">
+                    <div class="cart_check"><input type="checkbox" name="price_check4"></div>
+                    <div class="cart_img"><img src="" alt="bread4" width="60"></div>
+                    <div class="cart_pname"><span>빵4</span></div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_price">??,???원</div>
+                    <div class="cart_num"><input type="number" maxlength="2" size="2" value="1" min="0"
+                            id="cart_num_id">
+                    </div>
+                    <div class="cart_sum">??,???원</div>
+                </div>
+                <div class="cart_sub_div">
+                    <div class="cart_delete"><button>X</button></div>
+                </div>
+            </div>
+
+            <div class="cart_footer">
+                <div><button>장바구니 비우기</button></div>
+                <div class="cart_all_sum">총 합계: ??,???원</div>
+            </div>
+
+            <div class="last_order">
+                <div><a href="./cash_page.html">선택한 상품 구매</a></div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <a href="#">Home</a>
+            <a href="./guide.html">Guide</a>
+            <a href="mailto:yulmi416@gmail.com" title="스팸성 메일은 차단됩니다.">Store inquiry</a>
+            <a href="./usingterm.html">Agreement</a>
+            <a href="./privacypolicy.html">Privacy policy</a>
+        </div>
+        <div class="footer_middle">
+            <div>
+                <span>Customer center</span>
+                <p>
+                    <br>
+                    02. 345. 5439
+                    <br>
+                    월-금 10:00 - 17:00
+                    <br>
+                </p>
+            </div>
+            <div>
+                <span>Bank Account</span>
+                <br>
+                <p>
+                    <br>
+                    신한 110-344544-110
+                    <br>
+                    빵셔틀(김유림)
+                </p>
+            </div>
+            <div>
+                <span>Community</span>
+                <br>
+                <p>
+                    <br>
+                    <a href="./community_Notice.html">공지사항</a>
+                    <br>
+                    <a href="./community_QNA.html">Q & A</a>
+                    <br>
+                    <a href="#">상품후기</a>
+                </p>
+            </div>
+            <div>
+                <span>SNS</span>
+                <br>
+                <p>
+                    <br>
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <span>법인명: (주)식빵 주식회사</span>
+            <span>대표: 빵셔틀</span>
+            <span>전화: 1588-8888</span>
+            <span>개인정보관리책임자: 빵셔틀(bbangsuttle@gmail.com)</span>
+            <span>이메일: bbangsuttle@gmail.com</span>
+        </div>
+        <div class="copyright">
+            <p>
+                COPYRIGHT ⓒ 2022 BBANGSHUTTLE ALL RIGHTS RESERVED.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
