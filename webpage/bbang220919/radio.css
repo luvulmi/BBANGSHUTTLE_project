@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.sc-container section p {
+  display: none;
+  text-align: justify;
+  word-break: break-all;
+}
+
+.sc-container section input[type="radio"] {
+  display: none;
+}
+
+.sc-container section input[type="radio"]+label {
+  display: block;
+  background-color: #ffffff;
+  padding: 10px;
+  border-bottom: 1px solid #333333;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.sc-container section input[type="radio"]+label::before {
+  content: '\f0a9';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.sc-container section input[type="radio"]+label::after {
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sc-container section input[type="radio"]:checked+label::after {
+  content: '\f106';
+}
+
+.sc-container section input[type="radio"]+label:nth-of-type(1) {
+  border-top: 1px solid #333333;
+}
+
+.sc-container section input[type="radio"]:checked+label+p {
+  display: block;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #333333;
+}
