@@ -109,6 +109,7 @@ button {
 button:hover {
     background-color: lightgray;
 }
+
 /* input 스타일 */
 
 input[type=checkbox] {
