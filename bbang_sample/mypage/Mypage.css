@@ -24,7 +24,7 @@ main {
 }
 
 .tbl_mypage tbody td {
-    padding-left: 70px;
+    padding-left: 7%;
 }
 
 .tbl_mypage tbody td ul {
@@ -73,6 +73,7 @@ main {
 }
 
 .my_info .user_info strong {
+    padding-bottom: 5px;
     font-size: 14px;
     text-align: center;
 }
