@@ -9,6 +9,8 @@
     text-decoration: overline #bd8a61;
 }
 
+/* 폼 기본 설정 */
+
 .cash_page {
     font-family: 'Open Sans', sans-serif;
     color: #1a1a1a;
@@ -18,33 +20,7 @@
     margin: 50px auto;
 }
 
-.button {
-    float: right;
-    color: #ffffff;
-    background-color: #bd8a61;
-    padding: 12px 25px;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 2px;
-    outline: 0;
-    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
-    transition: all .2s;
-}
-
-.button:hover,
-.button:active,
-.button:focus {
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-.button--transparent {
-    background: transparent;
-    border: 0;
-    outline: 0;
-}
+/* 기본 인풋 속성 */
 
 input {
     width: calc(100% - 10px);
@@ -56,11 +32,15 @@ input {
     border-bottom: 2px solid #f0f0f0;
 }
 
+/* 인풋 선택 효과 */
+
 input:focus {
     outline: none;
     border-color: #bd8a61;
 
 }
+
+/* form-list 및 form-list_row 속성 */
 
 .form-list {
     padding-left: 0;
@@ -81,6 +61,8 @@ input:focus {
     color: #939393;
 }
 
+/* input 2개 이상 놓는 클래스 */
+
 .form-list__row--inline {
     display: flex;
     justify-content: space-between;
@@ -100,6 +82,8 @@ input:focus {
     justify-content: space-between;
 }
 
+/* 다중 input  크기 */
+
 .form-list__input-inline>* {
     width: calc(50% - 10px - 10px);
 }
@@ -107,6 +91,8 @@ input:focus {
 .user_name {
     width: calc(40% - 10px - 10px);
 }
+
+/* 카드번호 인풋 */
 
 #input--cc {
     position: relative;
@@ -117,6 +103,8 @@ input:focus {
     padding-left: 46px;
     width: calc(100% - 51px);
 }
+
+/* 카드 번호 카드 이미지 */
 
 #input--cc:before {
     content: '';
@@ -139,4 +127,38 @@ input:focus {
 
 .user_phone_num {
     margin-right: 10px;
+}
+
+/* 버튼 속성 pay now */
+
+.button {
+    float: right;
+    color: #ffffff;
+    background-color: #bd8a61;
+    padding: 12px 25px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 2px;
+    outline: 0;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+
+.button a {
+    color: white;
+}
+
+.button:hover,
+.button:active,
+.button:focus {
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.button--transparent {
+    background: transparent;
+    border: 0;
+    outline: 0;
 }

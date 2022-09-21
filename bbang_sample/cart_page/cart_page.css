@@ -3,6 +3,8 @@ main {
     margin: 50px auto;
 }
 
+/* 카트 범위 기준 헤더 */
+
 .cart_header,
 .cart_data {
     display: flex;
@@ -14,10 +16,15 @@ main {
     background-color: lightgray;
 }
 
+/* 카트 데이터 구분 */
+
 .cart_data {
     margin: 30px 0;
     border-bottom: 2px solid;
 }
+
+/* 카트 헤더 범위 지정 > 클래스 볌위의 기준 */
+
 
 .cart_sub_div div {
     float: left;
@@ -35,6 +42,10 @@ main {
     flex: 1;
 }
 
+/* 카트 클래스별 범위 지정 */
+
+
+/* flex 5 */
 .cart_check {
     width: 10%;
 }
@@ -46,6 +57,9 @@ main {
 .cart_pname {
     width: 70%;
 }
+
+
+/* flex 4 */
 
 .cart_price {
     width: 33%;
@@ -59,18 +73,31 @@ main {
     width: 34%;
 }
 
+/* flex 1 */
+
 .cart_delete {
     width: 100%;
 }
 
+/* 카트 데이터 수직 정렬  */
 .cart_data {
     line-height: 50px;
 }
 
+/* 카트 삭제 버튼 사이즈 및 폰트 */
+
 .cart_delete button {
     font-weight: bold;
     font-size: 16px;
+    border: none;
+    width: 25px;
 }
+
+.cart_delete button:hover {
+    background-color: lightgray;
+}
+
+/* input 스타일 */
 
 input[type=checkbox] {
     transform: scale(1.3);
@@ -94,6 +121,8 @@ input[type=text] {
 .cart_all_sum {
     margin-top: 20px;
 }
+
+/* 선택한 상품 구매 버튼 속성 */
 
 .last_order {
     font-size: 1.2em;
