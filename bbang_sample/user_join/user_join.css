@@ -193,13 +193,13 @@
 
 .Confirm_btn1 a {
     display: inline-block;
-    background-color:#bd8a61;
+    background-color: #bd8a61;
     text-decoration: none;
     font-size: 20px;
-    color:white;
+    color: white;
     text-align: center;
     font-weight: bold;
-    
+
     width: 150px;
     height: 50px;
     line-height: 50px;
@@ -207,18 +207,18 @@
 }
 
 .Confirm_btn1:hover a {
-    background-color:#945d31;
+    background-color: #945d31;
 }
 
 .Confirm_btn2 a {
     display: inline-block;
-    background-color:#989898;
+    background-color: #514547;
     text-decoration: none;
     font-size: 20px;
-    color:white;
+    color: white;
     text-align: center;
     font-weight: bold;
-    
+
     width: 150px;
     height: 50px;
     line-height: 50px;
@@ -226,5 +226,5 @@
 }
 
 .Confirm_btn2:hover a {
-    background-color: #5d5d5d;
+    background-color: black;
 }
