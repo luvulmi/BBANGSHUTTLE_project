@@ -283,6 +283,7 @@ main {
     border-radius: 3px;
     background: #f8f8f8;
     padding: 0 10px;
+    width: 24%;
 }
 
 #boardwrite .board_row td textarea {
