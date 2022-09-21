@@ -8,7 +8,7 @@
 
 .OD_head {
     margin: 7px auto;
-    border: 2px solid gray;
+    border: 5px solid #dadada;
     /* border-radius: 15px; */
     /* background-color: aquamarine; */
     display: flex;
@@ -16,6 +16,9 @@
     justify-content: space-evenly;
     width: 100%;
     min-width: 1024px;
+    box-sizing: border-box;
+    margin-bottom: 48px;
+
 }
 
 .OD_hello,
@@ -53,7 +56,7 @@
 }
 
 .OrderDetail thead td {
-    border-bottom: 0.5px solid gray;
+    border-bottom: 0.5px solid #dadada;
 }
 
 .OD_table {
@@ -162,7 +165,7 @@
 
 .OD_customer {
     margin: 7px auto;
-    border-top: 1px solid gray;
+    border-top: 1px solid #dadada;
     /* border-radius: 15px; */
     /* background-color: lightblue; */
 }
