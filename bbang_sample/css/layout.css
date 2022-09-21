@@ -33,7 +33,7 @@ header {
 /* ================================================================================== */
 
 .header_top {
-    border-bottom: 1px solid #939393;
+    border-bottom: 1px solid #dadada;
     width: 100%;
     display: flex;
     align-items: center;
@@ -148,7 +148,7 @@ footer {
 .footer_top,
 .footer_middle,
 .footer_bottom {
-    border-top: 1px solid #939393;
+    border-top: 1px solid #dadada;
     font-size: 14px;
 }
 

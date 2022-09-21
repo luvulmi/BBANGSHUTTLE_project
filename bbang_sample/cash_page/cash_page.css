@@ -162,3 +162,11 @@ input:focus {
     border: 0;
     outline: 0;
 }
+
+/* hr 색상 변경 */
+
+hr {
+    height: 1px;
+    background-color: #dadada;
+    border: 0;
+}

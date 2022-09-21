@@ -1,13 +1,13 @@
 main {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 48px;
     width: 80%;
 }
 
 .cart_header,
 .cart_data {
     display: flex;
-    line-height: 50px;
+    line-height: 48px;
     text-align: center;
 }
 
@@ -17,7 +17,7 @@ main {
 
 .cart_data {
     margin-top: 20px;
-    border-bottom: 2px solid;
+    border-bottom: 2px solid #dadada;
 }
 
 .cart_sub_div div {
@@ -53,5 +53,5 @@ main {
 }
 
 .cart_data {
-    line-height: 50px;
+    line-height: 48px;
 }
