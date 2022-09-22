@@ -79,6 +79,9 @@ nav>div:nth-child(3) {
 .user_cate li {
     position: relative;
     padding: 10px 20px;
+}
+
+.user_cate li {
     cursor: pointer;
 }
 
@@ -128,12 +131,14 @@ nav>div:nth-child(3) {
     display: block;
 }
 
-.sub_cate>li:hover {
+.sub_cate li:hover {
     background-color: antiquewhite;
     border-left: 2.5px solid #bd8a61;
     transition: border 0.1s;
     font-weight: bold;
 }
+
+
 
 /* ================================================footer============================================ */
 
