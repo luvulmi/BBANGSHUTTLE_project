@@ -121,6 +121,28 @@ nav>div:nth-child(3) {
     width: 300%;
 }
 
+.main_cate>li {
+    color: inherit;
+    text-decoration: none;
+    background:
+        linear-gradient(to right,
+            #ffffff00,
+            #ffffff00),
+        linear-gradient(to right,
+            white,
+            #bd8a61
+            );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    cursor: default;
+}
+
+.main_cate>li:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
 .main_cate>li:hover .sub_cate,
 .user_cate>li:hover .sub_cate {
     display: block;
