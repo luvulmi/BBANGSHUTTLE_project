@@ -61,7 +61,7 @@ main {
 }
 
 .sub_top_tab ul {
-    width: 100vw;
+    width: 100%;
     display: flex;
 }
 

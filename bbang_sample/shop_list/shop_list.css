@@ -11,7 +11,7 @@ main {
 .SL_image {
     height: 500px;
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     background: url(../image/2.jpg) left/cover no-repeat;
 }
@@ -37,7 +37,7 @@ main {
 }
 
 .sub_top_tab ul {
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     display: flex;
 }

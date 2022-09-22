@@ -9,7 +9,7 @@ main {
 .Main_image {
     height: 500px;
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: center;
     background: url(../image/2.jpg) left/cover no-repeat;
 }
