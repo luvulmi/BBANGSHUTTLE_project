@@ -130,8 +130,7 @@ nav>div:nth-child(3) {
             #ffffff00),
         linear-gradient(to right,
             white,
-            #bd8a61
-            );
+            #bd8a61);
     background-size: 100% 3px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
@@ -184,7 +183,7 @@ footer {
 }
 
 .footer_top>a {
-    width: 15%;
+    width: 20%;
     text-align: center;
     margin: 20px 0;
 }
