@@ -1,0 +1,74 @@
+main {
+    width: 80%;
+    min-width: 900px;
+    margin: auto;
+}
+
+/* ==============table============= */
+
+.tbl_mypage {
+    width: 100%;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dadada;
+}
+
+.tbl_mypage thead th {
+    width: 20%;
+    color: #222;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #dadada;
+    border-left: 0;
+    border-right: 0;
+    padding: 25px 0;
+}
+
+
+.tbl_mypage tbody td ul {
+    padding: 15px 0 30px;
+}
+
+.tbl_mypage tbody td ul li {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.tbl_mypage tbody td>ul>li>a {
+    font-size: 14px;
+}
+
+.underline:hover {
+    text-decoration: underline #bd8961;
+    color: #bd8961;
+}
+
+/* =============myinfo=========== */
+
+.my_info {
+    background-color: #dadada5b;
+    height: 160px;
+}
+
+.user_info {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+/*=============최근 주문내역===========*/
+
+.recent_od {
+    padding-top: 70px;
+}
+
+.empty {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
