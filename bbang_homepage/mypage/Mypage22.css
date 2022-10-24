@@ -46,17 +46,60 @@ main {
 
 .my_info {
     background-color: #dadada5b;
-    height: 160px;
+    height: 150px;
 }
 
 .user_info {
-    display: flex;
     height: 100%;
-    align-items: center;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
+.user_info li {
+    height: 100px;
+    position: relative;
+}
+
+.user_info li {
+    display: flex;
+    align-items: flex-end;
+    padding: 5px 25px 0px;
+}
+
+.user_info li strong,
+.user_info li p {
+    position: absolute;
+    left: 47px;
+    bottom: 14px;
+    font-size: 2.2em;
+}
+
+.user_info li .grade_info {
+    position: absolute;
+    right: 35px;
+    bottom: 10px;
+    padding: 6px 24px;
+    border: 1.5px solid #656564;
+    border-radius: 16px;
+}
+
+.user_info li:nth-child(1) {
+    width: 50%
+}
+
+.user_info li:not(:nth-child(1)) {
+    border-left: 1px solid #dadada;
+    width: 25%;
+}
+
+.user_info li a>span:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 48px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
 
 /*=============최근 주문내역===========*/
 
@@ -67,6 +110,13 @@ main {
 .empty {
     padding: 100px 0;
     text-align: center;
+}
+
+.more {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #dadada;
 }
 
 .hidden {
