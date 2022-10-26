@@ -6,40 +6,48 @@ main {
 
 /* ==============table============= */
 
-.tbl_mypage {
-    width: 100%;
+.mypage_menu {
     margin-bottom: 25px;
+}
+
+.mypage_header ul li {
+    padding: 25px 0;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid hsl(0, 0%, 85%);
+}
+
+.mypage_header ul li span {
+    font-weight: 900;
+}
+
+
+.mypage_header ul,
+.mypage_sub,
+.mypage_sub ul {
+    display: flex;
+}
+
+.mypage_header ul li,
+.mypage_sub ul {
+    width: 25%;
+    text-align: center;
+}
+
+.mypage_sub ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    padding: 15px 0 30px;
     border-bottom: 1px solid #dadada;
 }
 
-.tbl_mypage thead th {
-    width: 20%;
-    color: #222;
-    font-weight: bold;
-    text-align: center;
-    border: 1px solid #dadada;
-    border-left: 0;
-    border-right: 0;
-    padding: 25px 0;
+.mypage_sub ul li {
+    padding: 2px;
 }
 
-
-.tbl_mypage tbody td ul {
-    padding: 15px 0 30px;
-}
-
-.tbl_mypage tbody td ul li {
-    margin-top: 5px;
-    text-align: center;
-}
-
-.tbl_mypage tbody td>ul>li>a {
+.mypage_sub ul li a {
     font-size: 14px;
-}
-
-.underline:hover {
-    text-decoration: underline #bd8961;
-    color: #bd8961;
 }
 
 /* =============myinfo=========== */
