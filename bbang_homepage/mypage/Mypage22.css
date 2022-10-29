@@ -67,7 +67,12 @@ main {
 }
 
 .mypage_sub ul li:before {
-    content: '> ';
+    content: '\f054';
+    font : var(--fa-font-solid);
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 3px;
+    color: #7b7b7b;
 }
 
 .mypage_sub ul li a {
@@ -166,17 +171,12 @@ main {
 }
 
 /* =======주소록 관리======== */
-.mypage_title h3 {
-    font-size: 1.8em;
-    margin-bottom: 20px;
-}
-
 .bx_mypage {
     height: 80px;
     background-color: #dadada63;
     display: flex;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 
 .bx_mypage h4 {
@@ -188,29 +188,31 @@ main {
     border-left: 1px dashed black;
 }
 
-.table_title {
+.table_count, .for_right {
     height: 23px;
     margin-bottom: 0;
     position: relative;
 }
 
-.table_title .count {
+.table_count .count,
+.for_right .qna_btn {
     position: absolute;
     right: 0;
 }
 
-.tbl_address {
+/* mypage_table 스타일 */
+.tbl_mypage {
     width: 100%;
     border-top: 2px solid #000;
     border-bottom: 1px solid #dadada;
     margin-bottom: 60px;
 }
 
-.tbl_address th {
+.tbl_mypage th {
     height: 64px;
 }
 
-.tbl_address td {
+.tbl_mypage td {
     border-top: 1px solid #dadada;
     text-align: center;
     height: 50px;
@@ -221,6 +223,7 @@ main {
     justify-content: center;
     gap: 15px;
     margin-bottom: 100px;
+    cursor: pointer;
 }
 
 .bx_btn_center a {
@@ -236,7 +239,69 @@ main {
     background-color: #514547;
 }
 
+.notice_info_list h3::before {
+    content: '\f071';
+    font : var(--fa-font-solid);
+    margin-right: 10px;
+}
+
 .notice_info_list h3,
 .notice_info_list ul li {
-    color: silver;
+    color: #7b7b7b;
 }
+
+/* ============1:1 문의 & 상품 문의 =========== */
+
+.for_right {
+    margin-top: 100px;
+    position: relative;
+}
+
+.for_right .bx_term {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border: 1px solid;
+    /* border-radius: 10px; */
+}
+
+.bx_term {
+    justify-content: center;
+}
+
+.bx_mypage button {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
+.bx_mypage .date_input_wrap {
+    display: flex;
+}
+
+.bx_mypage .btn_date_term {
+    margin-right: 5px;
+}
+
+.bx_mypage .active {
+    background-color: darkgray;
+}
+
+.bx_mypage .date_input_wrap #sdate {
+    margin-left: 20px;
+}
+
+.bx_mypage .btn_date_search {
+    margin-left: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.bx_mypage .hasDatepicker {
+    width: 100px;
+}
+
+.tbl_qna td {
+    height: 100px;
+}
+

@@ -104,8 +104,8 @@
         </nav>
     </header>
     <main>
-    <h3 class="sub_title">MY PAGE</h3>
-    <div class="mypage_menu">
+        <h3 class="sub_title">상품문의</h3>
+        <div class="mypage_menu">
             <div class="mypage_header">
                 <ul>
                     <li><span>쇼핑 혜택</spa>
@@ -143,35 +143,62 @@
                 </ul>
             </div>
         </div>
-        <!-- 등급 몇개 할 지 생각하기. -->
-        <div class="my_info">
-            <ul class="user_info">
-                <li><a href="#"><span>김유림님 회원등급</span>
-                    <strong>VIP</strong></a>
-                    <a class="grade_info" href="#">회원등급 안내</a>
+
+        <div class="bx_mypage bx_term">
+            <button type="button" title="최근1개월" class="btn_date_term active">최근1개월</button>
+            <button type="button" title="09월" id="btn_date_1" class="btn_date_term">09월</button>
+            <button type="button" title="08월" id="btn_date_1" class="btn_date_term">08월</button>
+            <div class="date_input_wrap">
+                <input input type="text" maxlength="8" name="sdate" id="sdate" readonly="readonly" class="hasDatepicker"
+                    value="22-09-29">
+                <span>~</span>
+                <input input type="text" maxlength="8" name="edate" id="edate" readonly="readonly" class="hasDatepicker"
+                    value="22-10-29">
+            </div>
+            <button type="button" title="조회" class="btn_date_search">조회</button>
+        </div>
+
+        <div class="table_count">
+            <div class="count">
+                총<span> 0 </span>건
+            </div>
+        </div>
+
+        <table class="tbl_mypage tbl_qna">
+            <colgroup>
+                <col style="width:500px">
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>상품정보</th>
+                    <th>문의내용</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">작성하신 상품 문의가 없습니다.</td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <li class="first"></li>
+            <li class="prev"></li>
+            <li class="active"></li>
+            <li class="next"></li>
+            <li class="last"></li>
+        </ul>
+
+        <div class="notice_info_list">
+            <h3>안내 드립니다</h3>
+            <ul>
+                <li>- 상품과 관련없는 내용, 비방, 광고, 불건전한 내용의 글은 사전 동의 없이 삭제될 수 있습니다.</li>
+                <li>
+                    - 아직 궁금하신 점이 있으신가요? 고객센터(02-345-5439)로 문의해주세요.
+                    <a href="../community/community_FAQ.html">FAQ 보러가기</a>
                 </li>
-                <li><a href="#">
-                    <span>사용가능 쿠폰</span>
-                    <p><span>3</span>개</p>
-                    </a></li>
-                <li><a href="#">
-                        <span>적립금</span>
-                        <p><span>1,000</span>p</p>
-                    </a></li>
             </ul>
         </div>
-
-        <div class="more">
-            <h3 class="od_history">최근 주문내역</h3>
-            <a href="#">더보기</a>
-        </div>
-        <p class="empty">주문내역이 존재하지 않습니다.</p>
-
-        <div class="more">
-            <h3 class="od_history">MY HEART</h3>
-            <a href="#">더보기</a>
-        </div>
-        <p class="empty">하트내역이 존재하지 않습니다.</p>
 
 
     </main>
