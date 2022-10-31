@@ -68,7 +68,7 @@ main {
 
 .mypage_sub ul li:before {
     content: '\f054';
-    font : var(--fa-font-solid);
+    font: var(--fa-font-solid);
     font-size: 12px;
     font-weight: bold;
     padding-right: 3px;
@@ -176,7 +176,7 @@ main {
     background-color: #dadada63;
     display: flex;
     align-items: center;
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .bx_mypage h4 {
@@ -188,8 +188,10 @@ main {
     border-left: 1px dashed black;
 }
 
-.table_count, .for_right {
+.table_count,
+.for_right {
     height: 23px;
+    margin-top: 60px;
     margin-bottom: 0;
     position: relative;
 }
@@ -200,12 +202,14 @@ main {
     right: 0;
 }
 
-/* mypage_table 스타일 */
+
+
+/* =========mypage_table 스타일========== */
 .tbl_mypage {
     width: 100%;
     border-top: 2px solid #000;
     border-bottom: 1px solid #dadada;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .tbl_mypage th {
@@ -239,9 +243,13 @@ main {
     background-color: #514547;
 }
 
+.notice_info_list {
+    font-size: 12px;
+}
+
 .notice_info_list h3::before {
     content: '\f071';
-    font : var(--fa-font-solid);
+    font: var(--fa-font-solid);
     margin-right: 10px;
 }
 
@@ -265,6 +273,7 @@ main {
     /* border-radius: 10px; */
 }
 
+/* ================기간 범위 잡기============= */
 .bx_term {
     justify-content: center;
 }
@@ -287,7 +296,7 @@ main {
     background-color: darkgray;
 }
 
-.bx_mypage .date_input_wrap #sdate {
+.bx_mypage .date_input_wrap #start_date {
     margin-left: 20px;
 }
 
@@ -304,4 +313,3 @@ main {
 .tbl_qna td {
     height: 100px;
 }
-
