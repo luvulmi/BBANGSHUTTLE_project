@@ -175,8 +175,11 @@ main {
     height: 80px;
     background-color: #dadada63;
     display: flex;
-    align-items: center;
     margin: 20px 0;
+}
+
+.bx_address {
+    align-items: center;
 }
 
 .bx_mypage h4 {
@@ -191,7 +194,6 @@ main {
 .table_count,
 .for_right {
     height: 23px;
-    margin-top: 60px;
     margin-bottom: 0;
     position: relative;
 }
@@ -200,6 +202,11 @@ main {
 .for_right .qna_btn {
     position: absolute;
     right: 0;
+}
+
+.table_count {
+    display: flex;
+
 }
 
 
@@ -220,6 +227,10 @@ main {
     border-top: 1px solid #dadada;
     text-align: center;
     height: 50px;
+}
+
+.tbl_mypage tbody td {
+    padding: 50px;
 }
 
 .bx_btn_center {
@@ -245,6 +256,7 @@ main {
 
 .notice_info_list {
     font-size: 12px;
+    margin-bottom: 20px;
 }
 
 .notice_info_list h3::before {
@@ -261,8 +273,8 @@ main {
 /* ============1:1 문의 & 상품 문의 =========== */
 
 .for_right {
-    margin-top: 100px;
     position: relative;
+    margin-bottom: 25px;
 }
 
 .for_right .bx_term {
@@ -273,9 +285,15 @@ main {
     /* border-radius: 10px; */
 }
 
+.qna_btn {
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
 /* ================기간 범위 잡기============= */
 .bx_term {
     justify-content: center;
+    align-items: center;
 }
 
 .bx_mypage button {
@@ -312,4 +330,37 @@ main {
 
 .tbl_qna td {
     height: 100px;
+}
+
+/* =========== 쿠폰 ============= */
+.bx_coupon {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.vip_coupon {
+    display: flex;
+    gap: 20px;
+}
+
+/* ============ 적립금 ============ */
+
+.my_point {
+    margin: 30px 0;
+    padding: 50px;
+    background-color: #e5e5e5;
+}
+
+.my_point ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my_point ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 120px;
 }

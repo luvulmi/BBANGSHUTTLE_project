@@ -120,15 +120,15 @@
             </div>
             <div class="mypage_sub">
                 <ul>
-                    <li><a href="#" class="underline">쿠폰</a></li>
-                    <li><a href="#" class="underline">적립금</a></li>
+                    <li><a href="./mypage_coupon.html" class="underline">쿠폰</a></li>
+                    <li><a href="./mypage_point.html" class="underline">포인트</a></li>
                 </ul>
                 <ul>
                     <li><a href="#" class="underline">장바구니</a></li>
-                    <li><a href="#" class="underline">관심상품</a></li>
+                    <li><a href="./mypage_heart.html" class="underline">관심상품</a></li>
                 </ul>
                 <ul>
-                    <li><a href="#" class="underline">주문/배송조회</a></li>
+                    <li><a href="./mypage_myorder.html" class="underline">주문/배송조회</a></li>
                     <li><a href="./mypage_address.html" class="underline">주소록 관리</a></li>
                 </ul>
                 <ul>
@@ -139,21 +139,18 @@
             </div>
         </div>
         <!-- 등급 몇개 할 지 생각하기. 브론즈, 골드, 실버, vip-->
-        <div class="bx_mypage">
+        <div class="bx_mypage bx_coupon">
             <div class="left small">
-                <span class="grade_icon friend">현재 friend</span>
-                <p><strong>소셜유저</strong>님의 회원등급은<br> <span class="grade_text friend">VIP</span>입니다.</p>
-                <button type="button" name="button" class="btn black downAllCoupon"
-                    onclick="WCK_COUPON_RENEWAL_FNC.setCouponTotalDown();">쿠폰 전체 다운</button>
+                <p><strong>김유림</strong>님의 회원등급은<br> <span class="grade_text friend">VIP</span>입니다.</p>
+                <button type="button" name="button" class="btn black downAllCoupon">쿠폰 전체 다운</button>
             </div>
             <div class="benefit">
-                <ul class="friend">
+                <ul class="vip_coupon">
                     <li>
                         <div class="grade_coupon">
-
+                            <img src="//static.wconcept.co.kr/web/images/common/img_grade_coupon_friend_01.png">
                             <p>3만원 이상 결제시</p>
                         </div>
-                        <input type="hidden" class="couponcd" value="C84351057">
                         <button type="button" name="button" class="btn smaller black">쿠폰다운</button>
                     </li>
                     <li>
@@ -161,7 +158,6 @@
                             <img src="//static.wconcept.co.kr/web/images/common/img_grade_coupon_friend_01.png">
                             <p>3만원 이상 결제시</p>
                         </div>
-                        <input type="hidden" class="couponcd" value="C87925915">
                         <button type="button" name="button" class="btn smaller black">쿠폰다운</button>
                     </li>
                 </ul>
@@ -179,42 +175,8 @@
             <button type="button" name="button" class="btn smaller gray"
                 onclick="WCK_COUPON_RENEWAL_FNC.setCouponInput();">쿠폰등록</button>
         </div>
-        <div class="table_title only_right">
-            <div class="count">총 <span>0</span>건</div>
-        </div>
-        <div class="tab_content content1 active">
-            <table class="cols coupon">
-                <colgroup>
-                    <col width="150px">
-                    <col width="">
-                    <col width="125px">
-                    <col width="125px">
-                    <col width="145px">
-                    <col width="170px">
-                    <col width="200px">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>쿠폰번호</th>
-                        <th>쿠폰명</th>
-                        <th>혜택</th>
-                        <th>최소사용금액</th>
-                        <th>적용대상</th>
-                        <th>사용가능</th>
-                        <th>사용기간<br>(남은기간)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7" class="no_data">
-                            <p>사용가능한 쿠폰이 없습니다.</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul class="pagination"></ul>
-            <!-- //list -->
-        </div>
+
+
         <div class="notice_info_list">
             <h3>안내 드립니다.</h3>
             <ul>
