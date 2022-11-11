@@ -336,6 +336,11 @@ main {
 .bx_coupon {
     flex-direction: row;
     justify-content: space-around;
+    border: 5px solid #f8f8f8;
+    background-color: #fff;
+    height: 189px;
+    width: 100%;
+    margin-bottom: 60px;
 }
 
 .vip_coupon {
@@ -343,24 +348,30 @@ main {
     gap: 20px;
 }
 
-/* ============ 적립금 ============ */
+/* ============ 포인트 ============ */
 
 .my_point {
     margin: 30px 0;
-    padding: 50px;
     background-color: #e5e5e5;
+    padding: 10px;
 }
 
 .my_point ul {
-    display: flex;
-    justify-content: space-evenly;
+    display: table;
+    height: 100px;
+    width: 100%;
 }
 
 .my_point ul li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20px;
-    width: 120px;
+    display: table-cell;
+    position: relative;
+    width: 33%;
+    height: 100%;
+    padding: 10px 60px;
+    border-left: 1px #7b7b7b dashed;
+    text-align: left;
+}
+
+.my_point ul li:first-child {
+    border: none;
 }
