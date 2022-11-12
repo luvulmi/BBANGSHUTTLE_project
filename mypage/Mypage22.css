@@ -1,0 +1,379 @@
+main {
+    width: 80%;
+    min-width: 900px;
+    margin: auto;
+}
+
+/* ==============mypage menu============= */
+
+.mypage_menu {
+    margin-bottom: 25px;
+}
+
+.mypage_header ul li {
+    padding: 25px 0;
+    position: relative;
+    border: 5px solid #dadada;
+    border-left: 0;
+    border-right: 0;
+}
+
+.mypage_header ul li:first-child {
+    border-left: 5px solid #dadada;
+}
+
+.mypage_header ul li:last-child {
+    border-right: 5px solid #dadada;
+}
+
+.mypage_header ul li span {
+    font-weight: 900;
+}
+
+.mypage_header ul li:not(:first-child):before {
+    content: '';
+    width: 1px;
+    height: 24px;
+    background-color: #e5e5e5;
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
+
+.mypage_header ul,
+.mypage_sub,
+.mypage_sub ul {
+    display: flex;
+}
+
+.mypage_header ul li,
+.mypage_sub ul {
+    width: 25%;
+    text-align: center;
+}
+
+.mypage_sub ul {
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    padding-top: 10px;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+}
+
+.mypage_sub ul li {
+    padding: 2px;
+}
+
+.mypage_sub ul li:before {
+    content: '\f054';
+    font: var(--fa-font-solid);
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 3px;
+    color: #7b7b7b;
+}
+
+.mypage_sub ul li a {
+    color: #7b7b7b;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mypage_sub ul li:not(:first-child):before {
+    height: 112px;
+    top: 16px;
+}
+
+
+.mypage_sub .underline:hover {
+    text-decoration: underline #bd8961;
+    color: #bd8961;
+}
+
+/* =============myinfo=========== */
+
+.my_info {
+    background-color: #dadada63;
+    height: 150px;
+}
+
+.user_info {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user_info li {
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 5px 25px 0px;
+}
+
+.user_info li strong,
+.user_info li p {
+    position: absolute;
+    left: 47px;
+    bottom: 14px;
+    font-size: 2.2em;
+}
+
+.user_info li .grade_info {
+    position: absolute;
+    right: 35px;
+    bottom: 10px;
+    padding: 6px 24px;
+    border: 1.5px solid #656564;
+    border-radius: 16px;
+}
+
+.user_info li:nth-child(1) {
+    width: 50%
+}
+
+.user_info li:not(:nth-child(1)) {
+    border-left: 1px dashed #dadada;
+    width: 25%;
+}
+
+.user_info li a>span:nth-child(1) {
+    position: absolute;
+    top: 10px;
+    left: 48px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+/*=============최근 주문내역===========*/
+
+.recent_od {
+    padding-top: 70px;
+}
+
+.empty {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.more {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #dadada;
+}
+
+.hidden {
+    display: none;
+}
+
+/* =======주소록 관리======== */
+.bx_mypage {
+    height: 80px;
+    background-color: #dadada63;
+    display: flex;
+    margin: 20px 0;
+}
+
+.bx_address {
+    align-items: center;
+}
+
+.bx_mypage h4 {
+    padding: 0 80px;
+}
+
+.bx_mypage p {
+    padding-left: 80px;
+    border-left: 1px dashed black;
+}
+
+.table_count,
+.for_right {
+    height: 23px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.table_count .count,
+.for_right .qna_btn {
+    position: absolute;
+    right: 0;
+}
+
+.table_count {
+    display: flex;
+
+}
+
+/* ============== bx_term ========== */
+.bx_term button,
+.bx_term input {
+    cursor: pointer;
+}
+
+
+
+/* =========mypage_table 스타일========== */
+.tbl_mypage {
+    width: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #dadada;
+    margin-bottom: 70px;
+}
+
+.tbl_mypage th {
+    height: 64px;
+}
+
+.tbl_mypage td {
+    border-top: 1px solid #dadada;
+    text-align: center;
+    height: 50px;
+}
+
+.bx_btn_center {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.bx_btn_center a {
+    width: 150px;
+    padding: 12px 16px;
+    border: none;
+    background: #bd8a61;
+    color: #fff;
+    text-align: center;
+}
+
+.bx_btn_center a:nth-child(2) {
+    background-color: #514547;
+}
+
+.notice_info_list {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.notice_info_list h3::before {
+    content: '\f071';
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+}
+
+.notice_info_list h3,
+.notice_info_list ul li {
+    color: #7b7b7b;
+}
+
+/* ============1:1 문의 & 상품 문의 =========== */
+
+.for_right {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.for_right .bx_term {
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    border: 1px solid;
+    /* border-radius: 10px; */
+}
+
+.qna_btn {
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
+/* ================기간 범위 잡기============= */
+.bx_term {
+    justify-content: center;
+    align-items: center;
+}
+
+.bx_mypage button {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
+.bx_mypage .date_input_wrap {
+    display: flex;
+}
+
+.bx_mypage .btn_date_term {
+    margin-right: 5px;
+}
+
+.bx_mypage .active {
+    background-color: darkgray;
+}
+
+.bx_mypage .date_input_wrap #start_date {
+    margin-left: 20px;
+}
+
+.bx_mypage .btn_date_search {
+    margin-left: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.bx_mypage .hasDatepicker {
+    width: 100px;
+}
+
+.tbl_qna td {
+    height: 100px;
+}
+
+/* =========== 쿠폰 ============= */
+.bx_coupon {
+    flex-direction: row;
+    justify-content: space-around;
+    border: 5px solid #f8f8f8;
+    background-color: #fff;
+    height: 189px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.vip_coupon {
+    display: flex;
+    gap: 20px;
+}
+
+/* ============ 포인트 ============ */
+
+.my_point {
+    margin: 30px 0;
+    background-color: #e5e5e5;
+    padding: 10px;
+}
+
+.my_point ul {
+    display: table;
+    height: 100px;
+    width: 100%;
+}
+
+.my_point ul li {
+    display: table-cell;
+    position: relative;
+    width: 33%;
+    height: 100%;
+    padding: 10px 60px;
+    border-left: 1px #7b7b7b dashed;
+    text-align: left;
+}
+
+.my_point ul li:first-child {
+    border: none;
+}
