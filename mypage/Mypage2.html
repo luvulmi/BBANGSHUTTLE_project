@@ -104,7 +104,7 @@
         </nav>
     </header>
     <main>
-        <h3 class="sub_title">쿠폰</h3>
+        <h3 class="sub_title">MY PAGE</h3>
         <div class="mypage_menu">
             <div class="mypage_header">
                 <ul>
@@ -121,7 +121,7 @@
             <div class="mypage_sub">
                 <ul>
                     <li><a href="./mypage_coupon.html" class="underline">쿠폰</a></li>
-                    <li><a href="./mypage_point.html" class="underline">포인트</a></li>
+                    <li><a href="./mypage_point.html" class="underline">적립금</a></li>
                 </ul>
                 <ul>
                     <li><a href="#" class="underline">장바구니</a></li>
@@ -138,71 +138,36 @@
                 </ul>
             </div>
         </div>
-        <!-- 등급 몇개 할 지 생각하기. 브론즈, 골드, 실버, vip-->
-        <div class="bx_mypage bx_coupon">
-            <div class="my_coupon">
-                <span class="grade_icon">VIP</span>
-                <div class="my_grade">
-                    <p><strong>김유림</strong>님의 회원등급은<br> <span class="grade_text friend">VIP</span>입니다.</p>
-                    <button type="button" name="button" class="btn black downAllCoupon">쿠폰 전체 다운</button>
-                </div>
-            </div>
-            <div class="benefit">
-                <p>적용 가능한 쿠폰이 없습니다.</p>
-            </div>
-        </div>
-
-        <ul class="tab tab_item2" id="paginganchor">
-            <li class="active"><a href="#">사용가능 쿠폰</a></li>
-            <li><a href="#">사용한 쿠폰</a>
-            </li>
-        </ul>
-        <div class="search_area">
-            <label for="">쿠폰 입력</label>
-            <input type="text" name="couponcd" id="couponcd" value="" style="width:295px" maxlength="16">
-            <button type="button" name="button" class="btn smaller gray"
-                onclick="WCK_COUPON_RENEWAL_FNC.setCouponInput();">쿠폰등록</button>
-        </div>
-        <div class="tbl_mypage content1 active">
-            <table class="cols coupon">
-                <colgroup>
-                    <col width="150px">
-                    <col width="">
-                    <col width="125px">
-                    <col width="125px">
-                    <col width="145px">
-                    <col width="170px">
-                    <col width="200px">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>쿠폰번호</th>
-                        <th>쿠폰명</th>
-                        <th>혜택</th>
-                        <th>최소사용금액</th>
-                        <th>적용대상</th>
-                        <th>사용가능</th>
-                        <th>사용기간<br>(남은기간)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7" class="no_data">
-                            <p>사용가능한 쿠폰이 없습니다.</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul class="pagination"></ul>
-        </div>
-        <div class="notice_info_list">
-            <h3>안내 드립니다.</h3>
-            <ul>
-                <li>상품쿠폰은 상품 단위로만 적용 가능하며, 장바구니 쿠폰은 전체 상품에 적용 가능합니다. (일부상품 제외)</li>
-                <li>유효기간이 지난 쿠폰은 재발행 되지 않습니다.</li>
-                <li>할인쿠폰의 할인금액이 상품의 판매가를 초과할 경우 사용이 불가능합니다.</li>
+        <!-- 등급 몇개 할 지 생각하기. -->
+        <div class="my_info">
+            <ul class="user_info">
+                <li><a href="#"><span>김유림님 회원등급</span>
+                        <strong>VIP</strong></a>
+                    <a class="grade_info" href="#">회원정보 수정</a>
+                </li>
+                <li><a href="#">
+                        <span>사용가능 쿠폰</span>
+                        <p><span>3</span>개</p>
+                    </a></li>
+                <li><a href="#">
+                        <span>적립금</span>
+                        <p><span>1,000</span>p</p>
+                    </a></li>
             </ul>
         </div>
+
+        <div class="more">
+            <h3 class="od_history">최근 주문내역</h3>
+            <a href="#">더보기</a>
+        </div>
+        <p class="empty">주문내역이 존재하지 않습니다.</p>
+
+        <div class="more">
+            <h3 class="od_history">MY HEART</h3>
+            <a href="#">더보기</a>
+        </div>
+        <p class="empty">하트내역이 존재하지 않습니다.</p>
+
 
     </main>
     <footer>

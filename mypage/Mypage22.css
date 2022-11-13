@@ -170,7 +170,7 @@ main {
     display: none;
 }
 
-/* =======주소록 관리======== */
+/* ======== bx_mypage 스타일 ======== */
 .bx_mypage {
     height: 80px;
     background-color: #dadada63;
@@ -178,15 +178,16 @@ main {
     margin: 20px 0;
 }
 
+/* =======주소록 관리======== */
 .bx_address {
     align-items: center;
 }
 
-.bx_mypage h4 {
+.bx_address h4 {
     padding: 0 80px;
 }
 
-.bx_mypage p {
+.bx_address p {
     padding-left: 80px;
     border-left: 1px dashed black;
 }
@@ -209,7 +210,7 @@ main {
 
 }
 
-/* ============== bx_term ========== */
+/* ============== bx_term 스타일 ========== */
 .bx_term button,
 .bx_term input {
     cursor: pointer;
@@ -256,9 +257,11 @@ main {
     background-color: #514547;
 }
 
+/* ============== notice_info_lst 스타일 ================= */
 .notice_info_list {
     font-size: 12px;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .notice_info_list h3::before {
@@ -270,6 +273,48 @@ main {
 .notice_info_list h3,
 .notice_info_list ul li {
     color: #7b7b7b;
+}
+
+/* ================기간 범위 잡기============= */
+.bx_term {
+    justify-content: center;
+    align-items: center;
+}
+
+.bx_term button {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
+.bx_term .date_input_wrap {
+    display: flex;
+}
+
+.bx_term .btn_date_term {
+    margin-right: 5px;
+}
+
+.bx_term .active {
+    background-color: darkgray;
+}
+
+.bx_term .date_input_wrap #start_date {
+    margin-left: 20px;
+}
+
+.bx_term .btn_date_search {
+    margin-left: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.bx_term .hasDatepicker {
+    width: 100px;
+}
+
+.tbl_qna td {
+    height: 100px;
 }
 
 /* ============1:1 문의 & 상품 문의 =========== */
@@ -292,52 +337,10 @@ main {
     padding: 8px;
 }
 
-/* ================기간 범위 잡기============= */
-.bx_term {
-    justify-content: center;
-    align-items: center;
-}
-
-.bx_mypage button {
-    background-color: white;
-    border: 1px solid #d9d9d9;
-    padding: 8px;
-}
-
-.bx_mypage .date_input_wrap {
-    display: flex;
-}
-
-.bx_mypage .btn_date_term {
-    margin-right: 5px;
-}
-
-.bx_mypage .active {
-    background-color: darkgray;
-}
-
-.bx_mypage .date_input_wrap #start_date {
-    margin-left: 20px;
-}
-
-.bx_mypage .btn_date_search {
-    margin-left: 20px;
-    background-color: black;
-    color: #fff;
-}
-
-.bx_mypage .hasDatepicker {
-    width: 100px;
-}
-
-.tbl_qna td {
-    height: 100px;
-}
 
 /* =========== 쿠폰 ============= */
 .bx_coupon {
     flex-direction: row;
-    justify-content: space-around;
     border: 5px solid #f8f8f8;
     background-color: #fff;
     height: 189px;
@@ -345,10 +348,112 @@ main {
     margin-bottom: 60px;
 }
 
-.vip_coupon {
+.bx_coupon .my_coupon {
+    width: 200px;
+    padding-left: 150px;
+    background-color: #f8f8f8;
+    position: relative;
     display: flex;
-    gap: 20px;
 }
+
+.bx_coupon .grade_icon {
+    position: absolute;
+    top: 51px;
+    left: 38px;
+    width: 84px;
+    line-height: 84px;
+    text-align: center;
+    font-size: 2rem;
+    border: 3px solid;
+    border-radius: 50%;
+}
+
+.bx_coupon .my_grade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bx_coupon .my_coupon p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.bx_coupon .my_coupon button {
+    width: 140px;
+    padding: 0 20px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    border-color: #dadada;
+    background-color: #dadada;
+    cursor: pointer;
+}
+
+.bx_coupon .benefit {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tab {
+    width: 100%;
+    border-bottom: 2px solid #000;
+    display: flex;
+}
+
+.tab.tab_item2 li {
+    width: 50%;
+    font-weight: bold;
+}
+
+.tab li.active {
+    border: 2px solid #000;
+    border-bottom: none;
+    line-height: 62px;
+}
+
+.tab li a {
+    border: 1px solid #d4d4d4;
+    border-bottom: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    line-height: 62px;
+}
+
+.search_area {
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #f2f2f2;
+    margin: 10px 0 20px;
+}
+
+.search_area label {
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.search_area input[type=text] {
+    height: 30px;
+    line-height: 28px;
+    background-color: #fff;
+}
+
+.search_area button {
+    height: 30px;
+    line-height: 28px;
+    border-color: #7d7d7d;
+    background-color: #7d7d7d;
+    color: #fff;
+}
+
 
 /* ============ 포인트 ============ */
 
