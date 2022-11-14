@@ -399,11 +399,10 @@ main {
 
 .tab {
     width: 100%;
-    border-bottom: 2px solid #000;
     display: flex;
 }
 
-.tab.tab_item2 li {
+.tab li {
     width: 50%;
     font-weight: bold;
 }
@@ -411,12 +410,10 @@ main {
 .tab li.active {
     border: 2px solid #000;
     border-bottom: none;
-    line-height: 62px;
 }
 
 .tab li a {
     border: 1px solid #d4d4d4;
-    border-bottom: 0;
     border-left: 0;
     display: block;
     height: 100%;
@@ -425,6 +422,10 @@ main {
     color: #333;
     font-size: 18px;
     line-height: 62px;
+}
+
+.use_coupon>div {
+    display: none;
 }
 
 .search_area {
@@ -482,4 +483,9 @@ main {
 
 .my_point ul li:first-child {
     border: none;
+}
+
+/* ========= 리뷰 ============ */
+.write_review>div {
+    display: none;
 }

@@ -8,6 +8,7 @@
     <title>BBANGSHUTTLE</title>
     <script src="https://kit.fontawesome.com/35f5bd1444.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/248a89409c.js" crossorigin="anonymous"></script>
+    <script defer src="./mypage.js"></script>
     <link rel="stylesheet" href="./Mypage22.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
@@ -152,48 +153,88 @@
             </div>
         </div>
 
-        <ul class="tab tab_item2" id="paginganchor">
-            <li class="active"><a href="#">사용가능 쿠폰</a></li>
-            <li><a href="#">사용한 쿠폰</a>
+        <ul class="tab coupon_tab" id="paginganchor">
+            <li class="active"><a href="#usable_coupon">사용가능 쿠폰</a></li>
+            <li><a href="#used_coupon">사용한 쿠폰</a>
             </li>
         </ul>
-        <div class="search_area">
-            <label for="">쿠폰 입력</label>
-            <input type="text" name="couponcd" id="couponcd" value="" style="width:295px" maxlength="16">
-            <button type="button" name="button" class="btn smaller gray"
-                onclick="WCK_COUPON_RENEWAL_FNC.setCouponInput();">쿠폰등록</button>
-        </div>
-        <div class="tbl_mypage content1 active">
-            <table class="cols coupon">
-                <colgroup>
-                    <col width="150px">
-                    <col width="">
-                    <col width="125px">
-                    <col width="125px">
-                    <col width="145px">
-                    <col width="170px">
-                    <col width="200px">
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th>쿠폰번호</th>
-                        <th>쿠폰명</th>
-                        <th>혜택</th>
-                        <th>최소사용금액</th>
-                        <th>적용대상</th>
-                        <th>사용가능</th>
-                        <th>사용기간<br>(남은기간)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="7" class="no_data">
-                            <p>사용가능한 쿠폰이 없습니다.</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <ul class="pagination"></ul>
+        <div class="use_coupon">
+            <div id="usable_coupon">
+                <div class="search_area">
+                    <label for="">쿠폰 입력</label>
+                    <input type="text" name="couponcd" id="couponcd" value="" style="width:295px" maxlength="16">
+                    <button type="button" name="button" class="btn smaller gray"
+                        onclick="WCK_COUPON_RENEWAL_FNC.setCouponInput();">쿠폰등록</button>
+                </div>
+                <table class="tbl_mypage">
+                    <colgroup>
+                        <col width="150px">
+                        <col width="50px">
+                        <col width="125px">
+                        <col width="125px">
+                        <col width="145px">
+                        <col width="170px">
+                        <col width="200px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>쿠폰번호</th>
+                            <th>쿠폰명</th>
+                            <th>혜택</th>
+                            <th>최소사용금액</th>
+                            <th>적용대상</th>
+                            <th>사용가능</th>
+                            <th>사용기간<br>(남은기간)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="7" class="no_data">
+                                <p>사용가능한 쿠폰이 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="used_coupon">
+                <div class="bx_mypage bx_term">
+                    <button type="button" title="최근1개월" class="btn_date_term active">최근1개월</button>
+                    <button type="button" title="09월" id="btn_date_1" class="btn_date_term"></button>
+                    <button type="button" title="08월" id="btn_date_1" class="btn_date_term"></button>
+                    <div class="date_input_wrap">
+                        <input type="date" name="sdate" id="start_date" class="hasDatepicker">
+                        <span>~</span>
+                        <input type="date" name="edate" id="end_date" class="hasDatepicker">
+                    </div>
+                    <button type="button" title="조회" class="btn_date_search">조회</button>
+                </div>
+                <table class="tbl_mypage">
+                    <colgroup>
+                        <col width="150px">
+                        <col width="">
+                        <col width="170px">
+                        <col width="335px">
+                        <col width="115px">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>쿠폰번호</th>
+                            <th>쿠폰명</th>
+                            <th>혜택</th>
+                            <th>사용내역</th>
+                            <th>사용일</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td colspan="5" class="no_data">
+                                <p>사용한 쿠폰이 없습니다.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <div class="notice_info_list">
             <h3>안내 드립니다.</h3>
