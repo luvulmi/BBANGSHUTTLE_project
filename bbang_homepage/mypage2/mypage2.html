@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../mypage/Mypage.css">
+
+    <title>Document</title>
+
+    <style>
+        .my_info,
+        .my_community {
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 여기까지는 모바일에 특화된 스타일 */
+
+        /* 여기서부터는 460 이상의 화면 */
+        @media all and (min-width: 460px) {
+
+            .my_info,
+            .my_community {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        /* 여기서부터는 760 이상의 화면. 주로 태블릿. */
+        @media all and (min-width: 760px) {
+            .my_community {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .my_community div {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div class="my_info">
+                <div class="user_info">
+                    <img src="../image/man3.png" alt="man">
+                    <div>
+                        <strong>김유림님은 일반회원 등급입니다</strong>
+                        <a href="#">나의 정보 수정하기</a>
+                    </div>
+                </div>
+                <ul>
+                    <li class="milige"><a href="#">적립금
+                            <span>0</span>
+                        </a></li>
+                    <li class="coupon"><a href="#">쿠폰
+                            <span>0</span>
+                        </a></li>
+                    <li class="cart"><a href="#">장바구니
+                            <span>0</span>
+                        </a></li>
+                    <li class="wish"><a href="#">관심상품
+                            <span>0</span>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="my_community">
+                <div class="my_menu">
+                    <div>리뷰관리</div>
+                    <div>배송지관리</div>
+                    <div>결제관리</div>
+                </div>
+
+                <div class="community">
+                    <div>공지</div>
+                    <div>이벤트</div>
+                    <div>고객센터</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

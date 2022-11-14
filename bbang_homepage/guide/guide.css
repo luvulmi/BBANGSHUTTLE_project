@@ -1,0 +1,30 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.t-msg,
+.gd-dsc li {
+    font-size: 14px;
+    color: #7b7b7b;
+}
+
+.gd-dsc {
+    margin-top: 70px;
+}
+
+.gd-dsc dt {
+    padding: 0 0 10px 10px;
+    font-size: 16px;
+    color: #000;
+    border-bottom: 1px dashed #939393;
+    margin-top: 30px;
+}
+
+.gd-dsc dd {
+    padding: 15px 0 0 10px;
+    font-size: 14px;
+    color: #7b7b7b;
+    line-height: 30px;
+    margin-left: 40px;
+}

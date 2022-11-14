@@ -1,0 +1,234 @@
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'S-CoreDream-3Light';
+}
+
+main,
+footer,
+.header_top {
+    min-width: 900px;
+}
+
+footer {
+    width: 80%;
+    min-width: 900px;
+}
+
+header {
+    height: 86px;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ================================================================================== */
+
+.header_top {
+    border-bottom: 1px solid #dadada;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 19px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: #ffffff70;
+    transition: all 0.3s;
+}
+
+.header_top img {
+    width: 108px;
+    height: 82px;
+}
+
+nav>div>a {
+    padding-left: 3%;
+}
+
+nav>div:nth-child(1) {
+    width: 15%;
+    padding-left: 50px;
+}
+
+nav>div:nth-child(2) {
+    width: 70%;
+}
+
+nav>div:nth-child(3) {
+    width: 15%;
+}
+
+.main_cate,
+.user_cate {
+    display: flex;
+    justify-content: center;
+}
+
+.main_cate li,
+.user_cate li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+.user_cate li {
+    cursor: pointer;
+}
+
+.main_cate>li {
+    color: black;
+    padding: 30px 20px;
+    width: 25%;
+}
+
+
+.user_cate>li {
+    padding: 30px 20px;
+}
+
+.sub_cate {
+    width: 100%;
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    background-color: white;
+    border-top: 1px solid #939393;
+    box-sizing: border-box;
+}
+
+.sub_cate li {
+    background-color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.header_top:hover {
+    background-color: white;
+}
+
+.user_cate .sub_cate li {
+    width: 300%;
+}
+
+.main_cate>li {
+    color: inherit;
+    text-decoration: none;
+    background:
+        linear-gradient(to right,
+            #ffffff00,
+            #ffffff00),
+        linear-gradient(to right,
+            white,
+            #bd8a61);
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    cursor: default;
+}
+
+.main_cate>li:hover {
+    background-size: 0 3px, 100% 3px;
+}
+
+.main_cate>li:hover .sub_cate,
+.user_cate>li:hover .sub_cate {
+    display: block;
+}
+
+.main_cate>li .sub_cate:hover,
+.user_cate>li .sub_cate:hover {
+    display: block;
+}
+
+.sub_cate li:hover {
+    background-color: antiquewhite;
+    border-left: 2.5px solid #bd8a61;
+    transition: border 0.1s;
+    font-weight: bold;
+}
+
+
+
+/* ================================================footer============================================ */
+
+footer {
+    margin: auto;
+    margin-top: 200px;
+}
+
+.footer_top,
+.footer_middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer_top,
+.footer_middle,
+.footer_bottom {
+    border-top: 1px solid #dadada;
+    font-size: 14px;
+}
+
+.footer_top>a {
+    width: 20%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer_middle {
+    padding: 20px 0;
+}
+
+.footer_top>a,
+.footer_middle span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer_middle>div p,
+.footer_middle>div a,
+.footer_bottom span {
+    color: #6e6e6e;
+}
+
+.footer_middle div {
+    flex: 1;
+    text-align: center;
+    height: 100px;
+}
+
+.footer_bottom {
+    padding: 20px 0;
+    height: 50px;
+    font-size: 12px;
+}
+
+.copyright {
+    font-size: 9px;
+    color: #939393;
+    margin-bottom: 20px;
+}
+
+.sub_title {
+    min-height: 30px;
+    margin: 50px 0;
+    text-align: center;
+    font-size: 35px;
+    line-height: 48px;
+    padding: 25px 0 65px;
+    margin-top: 90px;
+    text-decoration: overline #bd8a61;
+}
