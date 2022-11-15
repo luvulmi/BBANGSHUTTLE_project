@@ -13,6 +13,7 @@ function Btn_click2(e) {
     let currentContent = writeReview.querySelector(e.target.getAttribute('href'));
 
     if (e.target.hasAttribute('href')) {
+        console.log()
         prereviewBtn.parentNode.classList.remove('active');
         e.target.parentNode.classList.add('active');
 

@@ -73,6 +73,7 @@ let precouponBtn = couponBtn[0],
 function Btn_click(e) {
   e.preventDefault();
   let currentContent = useCoupon.querySelector(e.target.getAttribute('href'));
+  console.log(currentContent);
 
   if (e.target.hasAttribute('href')) {
     precouponBtn.parentNode.classList.remove('active');
@@ -83,6 +84,7 @@ function Btn_click(e) {
 
     precouponBtn = e.target;
     preContent = currentContent;
+    console.log(preContent);
   }
 }
 
