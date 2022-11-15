@@ -154,7 +154,7 @@ main {
     padding-top: 70px;
 }
 
-.empty {
+.empty, .heart_list p {
     padding: 100px 0;
     text-align: center;
 }
@@ -207,7 +207,7 @@ main {
 
 .table_count {
     display: flex;
-
+    margin-top: 10px;
 }
 
 /* ============== bx_term 스타일 ========== */
@@ -411,11 +411,13 @@ main {
 .tab li.active {
     border: 2px solid #000;
     border-bottom: none;
+    height: 62px;
+    margin-bottom: -2px;
 }
 
-.tab li a {
+
+.tab a {
     border: 1px solid #d4d4d4;
-    border-left: 0;
     display: block;
     height: 100%;
     width: 100%;
@@ -485,6 +487,12 @@ main {
 .my_point ul li:first-child {
     border: none;
 }
+
+/* =========== 관심목록 =========== */
+.heart_list>div {
+    display: none;
+}
+
 
 /* ========= 리뷰 ============ */
 .write_review>div {

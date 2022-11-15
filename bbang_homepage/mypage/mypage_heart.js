@@ -1,8 +1,8 @@
 // ============== 리뷰 탭 ===============
-const reviewTab = document.querySelector('.review_tab'),
-    reviewBtn = reviewTab.querySelectorAll('.review_tab a'),
-    writeReview = document.querySelector('.write_review'),
-    myReview = document.getElementById('my_review');
+const reviewTab = document.querySelector('.heart_tab'),
+    reviewBtn = reviewTab.querySelectorAll('.heart_tab a'),
+    writeReview = document.querySelector('.heart_list'),
+    myReview = document.getElementById('heart_item');
 
 let prereviewBtn = reviewBtn[0],
     preContent1 = myReview;
