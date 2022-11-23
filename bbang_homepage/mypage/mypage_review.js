@@ -2,7 +2,7 @@
 const reviewTab = document.querySelector('.review_tab'),
     reviewBtn = reviewTab.querySelectorAll('.review_tab a'),
     writeReview = document.querySelector('.write_review'),
-    myReview = document.getElementById('my_review');
+    myReview = document.getElementById('writeable_review');
 
 let prereviewBtn = reviewBtn[0],
     preContent1 = myReview;

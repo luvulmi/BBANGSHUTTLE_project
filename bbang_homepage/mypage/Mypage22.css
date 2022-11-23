@@ -154,7 +154,8 @@ main {
     padding-top: 70px;
 }
 
-.empty, .heart_list p {
+.empty,
+.heart_list p {
     padding: 100px 0;
     text-align: center;
 }
@@ -256,6 +257,15 @@ main {
 
 .bx_btn_center a:nth-child(2) {
     background-color: #514547;
+}
+
+.bx_mypage button,
+.deleteBtn,
+.orderList button,
+.reviewContents button {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
 }
 
 /* ============== notice_info_lst 스타일 ================= */
@@ -406,18 +416,20 @@ main {
 .tab li {
     width: 50%;
     font-weight: bold;
+    border-top: 1px solid #d4d4d4;
+    border-left: 1px solid #d4d4d4;
+    border-right: 1px solid #d4d4d4;
+    border-bottom: 2px solid #000;
 }
 
 .tab li.active {
     border: 2px solid #000;
     border-bottom: none;
-    height: 62px;
-    margin-bottom: -2px;
 }
 
 
 .tab a {
-    border: 1px solid #d4d4d4;
+    /* border-bottom: 1px solid #d4d4d4; */
     display: block;
     height: 100%;
     width: 100%;
@@ -454,6 +466,7 @@ main {
 .search_area button {
     height: 30px;
     line-height: 28px;
+    margin-left: 10px;
     border-color: #7d7d7d;
     background-color: #7d7d7d;
     color: #fff;

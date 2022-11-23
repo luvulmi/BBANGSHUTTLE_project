@@ -8,7 +8,9 @@
   <title>BBANGSHUTTLE</title>
   <script src="https://kit.fontawesome.com/35f5bd1444.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/248a89409c.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./Mypage22.css">
+  <script defer src="./mypage_address.js"></script>
+  <link rel="stylesheet" href="./Mypage.css">
+  <link rel="stylesheet" href="./popup.css">
   <link rel="stylesheet" href="../css/layout.css">
   <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
 </head>
@@ -139,40 +141,7 @@
       </div>
     </div>
 
-    <div class="bx_mypage bx_address">
-      <h4>기본배송지</h4>
-      <p>경기도 용인시 기흥구 상하동 에버랜드 가고싶어요.</p>
-    </div>
-
-    <div class="table_count">
-      <div class="count">
-        총<span>1</span>건
-      </div>
-    </div>
-
-    <table class="tbl_mypage">
-      <tbody>
-        <tr>
-          <th>선택</th>
-          <th>받으시는 분</th>
-          <th>주소</th>
-          <th>연락처</th>
-          <th>관리</th>
-        </tr>
-        <tr>
-          <td>기본</td>
-          <td>김유림</td>
-          <td>용인시 에버랜드</td>
-          <td>010-111-1111</td>
-          <td>삭제</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="bx_btn_center">
-      <a>배송지 등록</a>
-      <a>기본배송지 설정</a>
-    </div>
+    <div id="myaddresslist"></div>
 
     <div class="notice_info_list">
       <h3>안내 드립니다</h3>
