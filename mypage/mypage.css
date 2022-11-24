@@ -1,0 +1,615 @@
+main {
+  width: 80%;
+  min-width: 900px;
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ==============mypage menu============= */
+
+.mypage_menu {
+  margin-bottom: 25px;
+}
+
+.mypage_header ul li {
+  padding: 25px 0;
+  position: relative;
+  border: 5px solid #dadada;
+  border-left: 0;
+  border-right: 0;
+}
+
+.mypage_header ul li:first-child {
+  border-left: 5px solid #dadada;
+}
+
+.mypage_header ul li:last-child {
+  border-right: 5px solid #dadada;
+}
+
+.mypage_header ul li span {
+  font-weight: 900;
+}
+
+.mypage_header ul li:not(:first-child):before {
+  content: '';
+  width: 1px;
+  height: 24px;
+  background-color: #e5e5e5;
+  display: block;
+  position: absolute;
+  top: 24px;
+  left: 0;
+}
+
+.mypage_header ul,
+.mypage_sub,
+.mypage_sub ul {
+  display: flex;
+}
+
+.mypage_header ul li,
+.mypage_sub ul {
+  width: 25%;
+  text-align: center;
+}
+
+.mypage_sub ul {
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  padding-top: 10px;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+}
+
+.mypage_sub ul li {
+  padding: 2px;
+}
+
+.mypage_sub ul li:before {
+  content: '\f054';
+  font: var(--fa-font-solid);
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 3px;
+  color: #7b7b7b;
+}
+
+.mypage_sub ul li a {
+  color: #7b7b7b;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mypage_sub ul li:not(:first-child):before {
+  height: 112px;
+  top: 16px;
+}
+
+
+.mypage_sub .underline:hover {
+  text-decoration: underline #bd8961;
+  color: #bd8961;
+}
+
+/* =============myinfo=========== */
+
+.my_info {
+  background-color: #dadada63;
+  height: 150px;
+}
+
+.user_info {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_info li {
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 5px 25px 0px;
+}
+
+.user_info li strong,
+.user_info li p {
+  position: absolute;
+  left: 47px;
+  bottom: 14px;
+  font-size: 2.2em;
+}
+
+.user_info li .grade_info {
+  position: absolute;
+  right: 35px;
+  bottom: 10px;
+  padding: 6px 24px;
+  border: 1.5px solid #656564;
+  border-radius: 16px;
+}
+
+.user_info li:nth-child(1) {
+  width: 50%
+}
+
+.user_info li:not(:nth-child(1)) {
+  border-left: 1px dashed #dadada;
+  width: 25%;
+}
+
+.user_info li a>span:nth-child(1) {
+  position: absolute;
+  top: 10px;
+  left: 48px;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+/*=============최근 주문내역===========*/
+
+.recent_od {
+  padding-top: 70px;
+}
+
+.empty {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.more {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #dadada;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =======주소록 관리======== */
+.bx_mypage {
+  height: 80px;
+  background-color: #dadada63;
+  display: flex;
+  margin: 20px 0;
+}
+
+.bx_address {
+  align-items: center;
+}
+
+.bx_address h4 {
+  padding: 0 80px;
+}
+
+.bx_address p {
+  padding-left: 80px;
+  border-left: 1px dashed black;
+}
+
+.table_count,
+.for_right {
+  height: 23px;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.table_count .count,
+.for_right .qna_btn {
+  position: absolute;
+  right: 0;
+}
+
+.table_count {
+  display: flex;
+  margin-top: 10px;
+}
+
+.lookbtn {
+  border: 1px solid;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+  padding: 2px;
+}
+
+
+/* =========mypage_table 스타일========== */
+.tbl_mypage {
+  width: 100%;
+  border-top: 2px solid #000;
+  border-bottom: 1px solid #dadada;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.tbl_mypage th {
+  height: 64px;
+}
+
+.tbl_mypage td {
+  border-top: 1px solid #dadada;
+  text-align: center;
+  height: 50px;
+}
+
+.bx_btn_center {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.bx_btn_center button {
+  width: 150px;
+  padding: 12px 16px;
+  border: none;
+  background: #bd8a61;
+  color: #fff;
+  text-align: center;
+}
+
+.bx_btn_center button:nth-child(2) {
+  background-color: #514547;
+}
+
+.notice_info_list {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.notice_info_list h3::before {
+  content: '\f071';
+  font: var(--fa-font-solid);
+  margin-right: 10px;
+}
+
+.notice_info_list h3,
+.notice_info_list ul li {
+  color: #7b7b7b;
+}
+
+.bx_mypage button,
+.deleteBtn,
+.orderList button,
+.reviewContents button {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  padding: 8px;
+}
+
+/* ============1:1 문의 & 상품 문의 =========== */
+
+.for_right {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.for_right .bx_term {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  border: 1px solid;
+  /* border-radius: 10px; */
+}
+
+.qna_btn {
+  border: 1px solid #d9d9d9;
+  padding: 8px;
+}
+
+td.question {
+  padding: 14px 100px 14px 30px;
+  text-align: left;
+}
+
+td.question .status {
+  background-color: #bd8961;
+  color: white;
+  border: 1px solid #bd8961;
+}
+
+td.question .tit {
+  cursor: pointer;
+}
+
+td.question .tit .date,
+.txt .date {
+  display: inline-block;
+  position: relative;
+  margin-top: 15px;
+  padding-right: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+td.question .tit .secret {
+  position: relative;
+  padding-right: 25px;
+}
+
+td.question .tit .secret::before {
+  content: '';
+  width: 15px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  background-image: url(../img/lock-solid.svg);
+  background-size: 15px 18px;
+}
+
+td.question .cont {
+  margin-top: 36px;
+  padding: 26px 0 14px 0;
+  border-top: 1px solid #d9d9d9;
+}
+
+td.question .answer {
+  margin-top: 27px;
+  padding-top: 26px;
+  border-top: 1px dashed #d9d9d9;
+}
+
+td.question .qitem {
+  font-size: 14px;
+  margin: 15px 0 2px 0;
+}
+
+/* ================기간 범위 잡기============= */
+.bx_term {
+  justify-content: center;
+  align-items: center;
+}
+
+.bx_mypage .date_input_wrap {
+  display: flex;
+}
+
+.bx_mypage .btn_date_term {
+  margin-right: 5px;
+}
+
+.bx_mypage .active {
+  background-color: darkgray;
+}
+
+.bx_mypage .date_input_wrap #start_date {
+  margin-left: 20px;
+}
+
+.bx_mypage .btn_date_search {
+  margin-left: 20px;
+  background-color: black;
+  color: #fff;
+}
+
+.bx_mypage .hasDatepicker {
+  width: 100px;
+}
+
+.tbl_qna td {
+  height: 100px;
+}
+
+/* =========== 쿠폰 ============= */
+.bx_coupon {
+  flex-direction: row;
+  border: 5px solid #f8f8f8;
+  background-color: #fff;
+  height: 189px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.bx_coupon .my_coupon {
+  width: 200px;
+  padding-left: 150px;
+  background-color: #f8f8f8;
+  position: relative;
+  display: flex;
+}
+
+.bx_coupon .grade_icon {
+  position: absolute;
+  top: 51px;
+  left: 38px;
+  width: 84px;
+  line-height: 84px;
+  text-align: center;
+  font-size: 2rem;
+  border: 3px solid;
+  border-radius: 50%;
+}
+
+.bx_coupon .my_grade {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bx_coupon .my_coupon p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.bx_coupon .my_coupon button {
+  width: 140px;
+  padding: 0 20px;
+  height: 50px;
+  text-align: center;
+  line-height: 48px;
+  border-color: #dadada;
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+.bx_coupon .benefit {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.tab {
+  width: 100%;
+  display: flex;
+}
+
+.tab li {
+  width: 50%;
+  font-weight: bold;
+  border-top: 1px solid #d4d4d4;
+  border-left: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  border-bottom: 2px solid #000;
+}
+
+.tab li.active {
+  border: 2px solid #000;
+  border-bottom: none;
+}
+
+
+.tab a {
+  /* border-bottom: 1px solid #d4d4d4; */
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  line-height: 62px;
+}
+
+.use_coupon>div {
+  display: none;
+}
+
+.search_area {
+  height: 70px;
+  text-align: center;
+  padding-top: 34px;
+  background-color: #f2f2f2;
+  margin: 10px 0 20px;
+}
+
+.search_area label {
+  line-height: 30px;
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+.search_area input[type=text] {
+  height: 30px;
+  line-height: 28px;
+  background-color: #fff;
+}
+
+.search_area button {
+  height: 30px;
+  line-height: 28px;
+  margin-left: 10px;
+  border-color: #7d7d7d;
+  background-color: #7d7d7d;
+  color: #fff;
+}
+
+/* ============ 포인트 ============ */
+
+.my_point {
+  margin: 30px 0;
+  background-color: #e5e5e5;
+  padding: 10px;
+}
+
+.my_point ul {
+  display: table;
+  height: 100px;
+  width: 100%;
+}
+
+.my_point ul li {
+  display: table-cell;
+  position: relative;
+  width: 33%;
+  height: 100%;
+  padding: 10px 60px;
+  border-left: 1px #7b7b7b dashed;
+  text-align: left;
+}
+
+.my_point ul li:first-child {
+  border: none;
+}
+
+/* ============ 관심목록 ============= */
+.heartitem_ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.heart_itemlist {
+  display: flex;
+  justify-content: space-evenly;
+  width: 450px;
+  height: 250px;
+  margin: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 30px;
+}
+
+
+.heart_itemlist img {
+  width: 200px;
+  height: 240px;
+}
+
+.heart_list>div {
+  display: none;
+}
+
+#heart_store {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.heartinfo {
+  position: relative;
+}
+
+.heart_price {
+  margin-top: 30px;
+}
+
+.cartplus {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  padding: 8px;
+}
+
+.text_wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.heartdel {
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+}
+
+/* ========= 리뷰 ============ */
+.write_review>div {
+  display: none;
+}

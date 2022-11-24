@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BBANGSHUTTLE</title>
+  <script src="https://kit.fontawesome.com/35f5bd1444.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/248a89409c.js" crossorigin="anonymous"></script>
+  <script defer src="./mypage_address.js"></script>
+  <link rel="stylesheet" href="./Mypage.css">
+  <link rel="stylesheet" href="./popup.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav class="header_top">
+      <div>
+        <a href="../index.html"><img src="../image/12121212-removebg-preview.png" alt=""></a>
+      </div>
+      <div>
+        <ul class="main_cate">
+          <li><strong><em>Bread</em></strong>
+            <ul class="sub_cate">
+              <a href="../shop_list/shop_list_bread.html">
+                <li>식빵</li>
+              </a>
+              <a href="../shop_list/shop_list_bread.html">
+                <li>간식빵</li>
+              </a>
+              <a href="../shop_list/shop_list_bread.html">
+                <li>건강빵</li>
+              </a>
+              <a href="../shop_list/shop_list_bread.html">
+                <li>도넛</li>
+              </a>
+              <a href="../shop_list/shop_list_bread.html">
+                <li>페스츄리/파이</li>
+              </a>
+            </ul>
+          </li>
+          <li><strong><em>Cake</em></strong>
+            <ul class="sub_cate">
+              <a href="../shop_list/shop_list_cake.html">
+                <li>생크림 케이크</li>
+              </a>
+              <a href="../shop_list/shop_list_cake.html">
+                <li>티라미수</li>
+              </a>
+              <a href="../shop_list/shop_list_cake.html">
+                <li>클래식 케이크</li>
+              </a>
+            </ul>
+          </li>
+          <li><strong><em>Present</em></strong>
+            <ul class="sub_cate">
+              <a href="../shop_list/shop_list_present.html">
+                <li>롤케이크</li>
+              </a>
+              <a href="../shop_list/shop_list_present.html">
+                <li>파운드/카스테라</li>
+              </a>
+              <a href="../shop_list/shop_list_present.html">
+                <li>구움과자/전통선물</li>
+              </a>
+            </ul>
+          </li>
+          <li><strong><em>Dessert</em></strong>
+            <ul class="sub_cate">
+              <a href="../shop_list/shop_list_dessert.html">
+                <li>쿠키/타르트</li>
+              </a>
+              <a href="../shop_list/shop_list_dessert.html">
+                <li>초코/캔디</li>
+              </a>
+              <a href="../shop_list/shop_list_dessert.html">
+                <li>마카롱</li>
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul class="user_cate">
+          <li><i class="fa-solid fa-user fa-xl"></i>
+            <ul class="sub_cate">
+              <a href="../log_in/log_in_page.html">
+                <li>로그인</li>
+              </a>
+              <a href="../order_history/order_history_page.html">
+                <li>주문내역</li>
+              </a>
+              <a href="../mypage/Mypage.html">
+                <li>마이페이지</li>
+              </a>
+            </ul>
+          </li>
+          <li><a href="../cart_page/cart_page.html"><i class="fa-solid fa-cart-shopping fa-xl"></i></a></li>
+          <li><a href="../community/community_Notice.html"><i class="fa-regular fa-comment fa-xl"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h3 class="sub_title">주소록 관리</h3>
+    <div class="mypage_menu">
+      <div class="mypage_header">
+        <ul>
+          <li><span>쇼핑 혜택</spa>
+          </li>
+          <li><span>상품 관리</spa>
+          </li>
+          <li><span>주문 관리</spa>
+          </li>
+          <li><span>활동 관리</spa>
+          </li>
+        </ul>
+      </div>
+      <div class="mypage_sub">
+        <ul>
+          <li><a href="./mypage_coupon.html" class="underline">쿠폰</a></li>
+          <li><a href="./mypage_point.html" class="underline">포인트</a></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="underline">장바구니</a></li>
+          <li><a href="./mypage_heart.html" class="underline">관심목록</a></li>
+        </ul>
+        <ul>
+          <li><a href="./mypage_myorder.html" class="underline">주문/배송조회</a></li>
+          <li><a href="./mypage_address.html" class="underline">주소록 관리</a></li>
+        </ul>
+        <ul>
+          <li><a href="./mypage_review.html" class="underline">리뷰관리</a></li>
+          <li><a href="./mypage_one2one.html" class="underline">1:1 문의</a></li>
+          <li><a href="./mypage_qnahistory.html" class="underline">상품문의</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="myaddresslist"></div>
+
+    <div class="notice_info_list">
+      <h3>안내 드립니다</h3>
+      <ul>
+        <li>- 상품 구매시 사용하실 배송지 정보를 관리하실 수 있습니다.</li>
+        <li>- 배송지는 최대 10개까지 등록하실 수 있습니다.</li>
+      </ul>
+    </div>
+
+  </main>
+  <footer>
+    <div class="footer_top">
+      <a href="../index.html">Home</a>
+      <a href="../guide/guide.html">Guide</a>
+      <a href="mailto:yulmi416@gmail.com" title="스팸성 메일은 차단됩니다.">Store inquiry</a>
+      <a href="../user_law/user_law.html">Agreement</a>
+      <a href="../user_law/privacypolicy.html">Privacy policy</a>
+    </div>
+    <div class="footer_middle">
+      <div>
+        <span>Customer center</span>
+        <p>
+          <br>
+          02. 345. 5439
+          <br>
+          월-금 10:00 - 17:00
+          <br>
+        </p>
+      </div>
+      <div>
+        <span>Bank Account</span>
+        <br>
+        <p>
+          <br>
+          신한 110-344544-110
+          <br>
+          빵셔틀(김유림)
+        </p>
+      </div>
+      <div>
+        <span>Community</span>
+        <br>
+        <p>
+          <br>
+          <a href="../community/community_Notice.html">공지사항</a>
+          <br>
+          <a href="../community/community_QNA.html">Q & A</a>
+          <br>
+          <a href="#">상품후기</a>
+        </p>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <span>법인명: (주)식빵 주식회사</span>
+      <span>대표: 빵셔틀</span>
+      <span>전화: 1588-8888</span>
+      <span>개인정보관리책임자: 빵셔틀(bbangshuttle@gmail.com)</span>
+      <span>이메일: bbangshuttle@gmail.com</span>
+    </div>
+    <div class="copyright">
+      <p>
+        COPYRIGHT ⓒ 2022 BBANGSHUTTLE ALL RIGHTS RESERVED.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

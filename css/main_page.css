@@ -1,0 +1,69 @@
+/* @@@@@@@@@@@@@@@@@@@@@@ main page @@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    /* margin-top: 150px; */
+}
+
+.Main_image {
+    height: 500px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: url(../image/2.jpg) left/cover no-repeat;
+}
+
+.Main_inner {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.Main_inner h2 {
+    color: #000;
+    font-size: 60px;
+    font-weight: 900;
+    /* font-style: italic; */
+    /* text-shadow: 5px 1px 1px rgb(255, 255, 255); */
+    position: relative;
+    top: 0px;
+}
+
+.Main_inner span {
+    color: #000;
+    /* text-shadow: 3px 1px 1px #000; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.M_recommend {
+    margin-top: 5%;
+}
+
+.M_recommend h1 {
+    font-style: italic;
+}
+
+.M_recommend_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+}
+
+.M_recommend_item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.M_recommend_item img {
+    width: 100%;
+}
